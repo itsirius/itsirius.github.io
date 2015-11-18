@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta property="og:image" content="http://www.redhat.com/profiles/rh/themes/redhatdotcom/img/Red_Hat_RGB.jpg" />    <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="last-publish-date" content="Tue, 20 Oct 2015 13:32:32 GMT" />
+<meta name="taxonomy-page_sub_type" content="Product detail" />
+<link rel="shortcut icon" href="../../../profiles/rh/themes/redhatdotcom/favicon.ico" type="image/x-icon" />
+<link href="http://www.redhat.com/ko/technologies/storage/storage-server" rel="alternate" hreflang="ko" />
+<meta name="node-type" content="page" />
+<link href="http://www.redhat.com/zh/technologies/storage/storage-server" rel="alternate" hreflang="zh" />
+<link href="http://www.redhat.com/fr/technologies/storage/storage-server" rel="alternate" hreflang="fr" />
+<link href="http://www.redhat.com/es/technologies/storage/storage-server" rel="alternate" hreflang="es" />
+<link href="http://www.redhat.com/ja/technologies/storage/storage-server" rel="alternate" hreflang="ja" />
+<link href="http://www.redhat.com/pt-br/technologies/storage/storage-server" rel="alternate" hreflang="pt-br" />
+<link href="gluster.html" rel="alternate" hreflang="en" />
+<link href="http://www.redhat.com/de/technologies/storage/gluster" rel="alternate" hreflang="de" />
+<link href="http://www.redhat.com/it/technologies/storage/storage-server" rel="alternate" hreflang="it" />
+<meta name="description" content="*/     Storage     Red Hat Gluster Storage           Open, software-defined storage" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="gluster.html" />
+
+    <title>Red Hat Gluster Storage (formerly Red Hat Storage Server) | Red Hat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link type="text/css" rel="stylesheet" href="http://www.redhat.com/sites/default/files/advagg_css/css__ASH4Iire8Au_rtIEA0Ai-djFa216QSoFzRbEIsDbnCA__ggIORisn0IADeh0nq0Dz2pNomH9stCmiZpZagItLsEk__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+@media (max-width:767px){.item.node-123151{background-image:url(http://www.redhat.com/cms/public/Mobile_Light_Gray_Bkgd_24.jpg);}}@media (min-width:768px){.item.node-123151{background-image:url(http://www.redhat.com/cms/public/Promo_Product_Storage_TypeE_2000x365.png);}}.lt-ie9 .item.node-123151{background-image:url(http://www.redhat.com/cms/public/Promo_Product_Storage_TypeE_2000x365.png);}.carousel-indicators li.node-icon-123151{background-image:url(http://www.redhat.com/cms/public/Mobile_Light_Gray_Bkgd_24.jpg);}
+
+/* ]]> */
+</style>
+<link type="text/css" rel="stylesheet" href="http://www.redhat.com/sites/default/files/advagg_css/css__cOSHoRJvAiuOGcqrijbraZIQ8jLdGAu0JNEY7S1rd1A__soriEKeUPMGFKMgyj1u7l77zVZ1LkYPKqXFMpDx0BGc__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__FAwh7iJGNvjTMUQCL4Px_IFO9-luAfME1Sy67NPnlq4__qKAPnCeuNA6LyIJyIvKKfI_wV4lYAFJlyPNooiQrgog__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__c2Qf4LIMJrbl9GJvG35J-Q05AM6NaChsTPy14tHgz_A__i0225J4cJvYBqX2qRwJyJEFjICq_PwxaT4NS1X8cqeg__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__4SAHbjIlop4yPVHcTlAVkFAm2KyrG0QfgW127LqYIBY__fa6-FAEVJYXaV1REYwWLAdiPfpSO3fr9sguS8x5Sdv0__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__wpajrf8pWA19ifT2xQXPB3J1TByoCXqZVtt6kXfl4Ow__HjilmikNH8l8y-83Z8tw_5_4ULHLly6Z8i0AR8eliCU__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="print" />
+<link type="text/css" rel="stylesheet" href="../../../sites/default/files/advagg_css/css__ISuIDMqd6Kesb1GXKi3H7_q3OboHI6O1nlNLflff9nI__XO15ExyI7TsWTGAyOFhX921Z9J7qU6Jjt0wSPBav-84__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.css" media="all" />
+
+    <!--[if lt IE 9]>
+      <script src="/profiles/rh/themes/redhatdotcom/js/selectivizr-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/nwmatcher-min.js" type="text/javascript"></script>
+      <script src="/profiles/rh/themes/redhatdotcom/js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__cPfkCw2zhUGQDWPjIJiJj_IQZzsdx8-M65q5qZtFpZQ__G5Rh3uMxdtH0L1OI2s-sFRkKhvHbydeViIo-bnL76IY__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.js"></script>
+<script type="text/javascript" src="http://www.redhat.com/profiles/rh/modules/redhat_www_tracking/js/adobe/target/mbox.js?nxwjs1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"redhatdotcom","theme_token":"pBwdGZq840ogc3QBdXHqhPuSvs8ArTQsXxcTatbhWag","jquery_version":"1.10","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"sites\/all\/libraries\/webrh\/dist\/css\/webrh.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_appliance\/theme\/google_appliance.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/node_embed\/plugins\/node_embed\/node_embed.css":1,"0":1,"modules\/locale\/locale.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-iconfont.css":1,"sites\/all\/libraries\/rh_iconfont\/dist\/files\/rh-web-iconfont.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/editorial.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/bootstrap.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/chrome.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/overpass.css":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/print.css":1,"profiles\/rh\/themes\/redhatdotcom\/css\/style.css":1},"js":{"sites\/all\/modules\/picture\/picturefill\/matchmedia.js":1,"sites\/all\/modules\/picture\/picturefill\/picturefill.js":1,"sites\/all\/modules\/picture\/picture.js":1,"\/\/www.redhat.com\/j\/elqNow\/elqImg.js":1,"\/\/www.redhat.com\/j\/elqNow\/elqCfg.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/s_code.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_analytics.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_analytics_internalcompaign.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_video.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_demand_base.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_analytics_nav_tracking.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_omni_footer.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.vendor.js":1,"sites\/all\/libraries\/webrh\/dist\/js\/webrh.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect-slide.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"profiles\/rh\/modules\/redhat_www_analytics\/js\/rh_analytics_on_page.js":1,"sites\/all\/modules\/linkit\/js\/linkit.js":1,"misc\/progress.js":1,"sites\/all\/modules\/linkit\/editors\/ckeditor\/linkitDialog.js":1,"sites\/all\/libraries\/jquery-cookie\/jquery.cookie-1.4.1.min.js":1,"profiles\/rh\/modules\/redhat_www_share\/js\/rh_share.js":1,"profiles\/rh\/modules\/redhat_www_solr\/js\/rh_solr.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/modernizr.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.pushmenu.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery-scrolltofixed.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/waypoints.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/sass-bootstrap.min.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/rh-chrome.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.fitvids.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.switchIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.selectBoxIt\/jquery.selectBoxIt.js":1,"profiles\/rh\/themes\/redhatdotcom\/js\/jquery.viewport\/jquery.viewport.min.js":1,"profiles\/rh\/modules\/redhat_www_tracking\/js\/adobe\/target\/mbox.js":1}},"linkit":{"autocompletePath":"http:\/\/www.redhat.com\/en\/linkit\/autocomplete\/___profile___?s=","dashboardPath":"\/en\/linkit\/dashboard\/","currentInstance":{}},"rh_analytics_enabled":true,"rh_analytics_node_id":"2511","rh_analytics_subtype":"product detail","rh_analytics_title":"rh | technologies | storage | gluster","rh_analytics_langcode":"en","redhat_www_share":{"facebook":{"popup":true,"window":{"height":"400","width":"600"}},"google":{"popup":true,"window":{"height":"650","width":"500"}},"twitter":{"popup":true,"window":{"height":"500","width":"500"}},"linkedin":{"popup":true,"window":{"height":"570","width":"520"}},"reddit":{"popup":true,"window":{"height":"700","width":"850"}}},"urlIsAjaxTrusted":{"\/en\/search\/node":true}});
+//--><!]]>
+</script>
+  </head>
+  <body class="bands-index html not-front not-logged-in no-sidebars page-node page-node- page-node-2511 node-type-page i18n-en prod-detail header-background-product-storage editorial " >
+    <div class="page">
+      
+      
+
+
+
+<div class="header-background-image">
+</div>
+
+
+
+<header class="main-header">
+
+  <div id="main-nav-wrap">
+    <div id="main-menu" class="clearfix">
+      <div class="container">
+        <div class="logo-mobile-wrap">
+          <div id="logo">
+            <a href="../../../en.1.html"><img src="../../../profiles/rh/themes/redhatdotcom/img/logo.png" class="screen" title="Red Hat" /></a>
+            <a href="../../../en.1.html"><img src="../../../profiles/rh/themes/redhatdotcom/img/logo-print.png" class="print" title="" /></a>
+          </div>
+          <div id="mobile-nav">
+            <ul>
+              <li class="mobile-search">
+                <a class="expand-mobile-search" href="gluster.html#"></a>
+              </li>
+              <li class="mobile-drop">
+                <a class="expand-mobile-nav" href="gluster.html"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="mobile-utility-nav">
+          <ul class="main">
+            <li class="trigger"><a href="gluster.html#account-tray" class="account"><i class="web-icon web-icon-user"></i>Your account</a>
+            </li>
+            <li class="trigger"><a href="gluster.html#global-tray" class="global"><i class="web-icon web-icon-globe"></i>Global preferences</a></li>
+          </ul>
+          <ul class="tray account-tray" id="account-tray">
+                          <li class="first rh-user-loggedout"><a href="../../../wapps/sso/logout.html" class="account-login-link utility-user-login-link">Log in</a></li>
+                                      <li class="last rh-user-loggedout"><a href="../../../wapps/ugc/register.html" class="account-register-link">Register</a></li>
+                                      <li class="first rh-user-loggedin"><a href="../../../wapps/ugc/protected/account.html" class="account-edit-link">Edit your profile and preferences</a></li>
+                                      <li class="last rh-user-loggedin"><a href="../../../wapps/sso/logout.html" class="account-logout-link">Log out</a></li>
+                      </ul>
+          <ul class="tray global-tray" id="global-tray">
+                          <li class="first trigger"><a href="gluster.html#global-language-tray" class="global-language">Select language</a>
+                <div id="global-language-tray" class="tray global-language-tray">
+                  <section><div><div><a href="http://www.redhat.com/zh/technologies/storage/storage-server" class="language-link" xml:lang="zh" hreflang="zh" title="Gluster storage">简体中文</a></div><div><a href="gluster.html" class="language-link active" xml:lang="en" hreflang="en" title="Red Hat Gluster Storage (formerly Red Hat Storage Server)">English</a></div><div><a href="http://www.redhat.com/fr/technologies/storage/storage-server" class="language-link" xml:lang="fr" hreflang="fr" title="Gluster storage">Français</a></div><div><a href="http://www.redhat.com/de/technologies/storage/gluster" class="language-link" xml:lang="de" hreflang="de" title="Gluster storage">Deutsch</a></div></div><div><div><a href="http://www.redhat.com/it/technologies/storage/storage-server" class="language-link" xml:lang="it" hreflang="it" title="Gluster storage">Italiano</a></div><div><a href="http://www.redhat.com/ja/technologies/storage/storage-server" class="language-link" xml:lang="ja" hreflang="ja" title="Gluster storage">日本語</a></div><div><a href="http://www.redhat.com/ko/technologies/storage/storage-server" class="language-link" xml:lang="ko" hreflang="ko" title="Gluster storage">한국어</a></div><div><a href="http://www.redhat.com/pt-br/technologies/storage/storage-server" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="Gluster storage">Português</a></div><div><a href="http://www.redhat.com/es/technologies/storage/storage-server" class="language-link" xml:lang="es" hreflang="es" title="Gluster storage">Español</a></div></div></section>                </div>
+              </li>
+                                      <li class="last trigger"><a href="gluster.html#global-countries-tray" class="global-countries">Explore countries</a>
+                <div id="global-countries-tray" class="tray global-countries-tray">
+                  <ul class="menu"><li class="first expanded trigger"><a class="asia-pacific">Asia Pacific</a><div class="tray asia-pacific-tray"><ul class="menu"><li class="first leaf"><a href="../../global/china.html">China</a></li>
+<li class="leaf"><a href="../../global/japan.html">Japan</a></li>
+<li class="leaf"><a href="../../global/singapore.html">Singapore</a></li>
+<li class="leaf"><a href="../../global/south-korea.html">South Korea</a></li>
+<li class="last leaf"><a href="../../global/taiwan.html">Taiwan</a></li>
+</ul></div></li><li class="expanded trigger"><a class="europe-middle-east-and-africa">Europe, Middle East, and Africa</a><div class="tray europe-middle-east-and-africa-tray"><ul class="menu"><li class="first leaf"><a href="../../global/austria.html">Austria</a></li>
+<li class="leaf"><a href="../../global/belgium.html">Belgium</a></li>
+<li class="leaf"><a href="../../global/czech-republic.html">Czech Republic</a></li>
+<li class="leaf"><a href="../../global/denmark.html">Denmark</a></li>
+<li class="leaf"><a href="../../global/finland.html">Finland</a></li>
+<li class="leaf"><a href="../../global/france.html">France</a></li>
+<li class="leaf"><a href="../../global/germany.html">Germany</a></li>
+<li class="leaf"><a href="../../global/ireland.html">Ireland</a></li>
+<li class="leaf"><a href="../../global/israel.html">Israel</a></li>
+<li class="leaf"><a href="../../global/italy.html">Italy</a></li>
+<li class="leaf"><a href="../../global/luxembourg.html">Luxembourg</a></li>
+<li class="leaf"><a href="../../global/netherlands.html">Netherlands</a></li>
+<li class="leaf"><a href="../../global/norway.html">Norway</a></li>
+<li class="leaf"><a href="../../global/poland.html">Poland</a></li>
+<li class="leaf"><a href="../../global/portugal.html">Portugal</a></li>
+<li class="leaf"><a href="../../global/russia.html">Russia</a></li>
+<li class="leaf"><a href="../../global/south-africa.html">South Africa</a></li>
+<li class="leaf"><a href="../../global/spain.html">Spain</a></li>
+<li class="leaf"><a href="../../global/sweden.html">Sweden</a></li>
+<li class="leaf"><a href="../../global/switzerland.html">Switzerland</a></li>
+<li class="leaf"><a href="../../global/turkey.html">Turkey</a></li>
+<li class="leaf"><a href="../../global/united-arab-emirates.html">United Arab Emirates</a></li>
+<li class="last leaf"><a href="../../global/united-kingdom.html">United Kingdom</a></li>
+</ul></div></li><li class="expanded trigger"><a class="latin-america">Latin America</a><div class="tray latin-america-tray"><ul class="menu"><li class="first leaf"><a href="../../global/argentina.html">Argentina</a></li>
+<li class="leaf"><a href="../../global/brazil.html">Brazil</a></li>
+<li class="leaf"><a href="../../global/chile.html">Chile</a></li>
+<li class="leaf"><a href="../../global/colombia.html">Colombia</a></li>
+<li class="last leaf"><a href="../../global/mexico.html">Mexico</a></li>
+</ul></div></li><li class="last expanded trigger"><a class="north-america">North America</a><div class="tray north-america-tray"><ul class="menu"><li class="first leaf"><a href="../../global/canada-english.html">Canada - English</a></li>
+<li class="leaf"><a href="../../global/canada-french.html">Canada - French</a></li>
+<li class="last leaf"><a href="../../global/united-states.html">United States</a></li>
+</ul></div></li></ul>                </div>
+              </li>
+                      </ul>
+        </div>
+        <nav id="main-nav">
+          <ul>
+            <li class="first expanded nav-links top-level-wrapper"><a href="../../technologies.1.html" class="active">Technologies</a></li>
+<li class="expanded nav-links top-level-wrapper"><a href="../../services.1.html">Services &amp; support</a></li>
+<li class="expanded nav-links top-level-wrapper"><a href="../../success-stories.1.html">Success stories</a></li>
+<li class="last expanded nav-links top-level-wrapper"><a href="../../about.1.html">About Red Hat</a></li>
+          </ul>
+        </nav>
+        <div id="to-top">
+          <a class="btn_slideto" href="gluster.html">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-subnav">
+      <div class="container equal-height">
+        <div class="sub-menu"><div class="sub-container"> <div class="inner-sub-container"><div class="menu-items"><h3><a href="../../technologies.1.html">Solutions</a></h3><ul class="menu"><li class="first leaf"><a href="../it-infrastructure.html">Infrastructure</a></li>
+<li class="leaf"><a href="../infrastructure-as-a-service.html">IaaS</a></li>
+<li class="leaf"><a href="../platform-as-a-service.html">PaaS</a></li>
+<li class="last leaf"><a href="../cloud-applications.html">Application development and integration</a></li>
+</ul></div>
+<div class="menu-items"><h3><a href="../all-products.html">Product lines</a></h3><ul class="menu"><li class="first leaf"><a href="../linux-platforms.1.html">Linux platforms</a></li>
+<li class="leaf"><a href="../jboss-middleware.html">JBoss Middleware</a></li>
+<li class="leaf"><a href="../virtualization.html">Virtualization</a></li>
+<li class="leaf"><a href="../cloud-computing.1.html">Cloud computing</a></li>
+<li class="leaf"><a href="../storage.1.html">Storage</a></li>
+<li class="leaf"><a href="../mobile.1.html">Mobile</a></li>
+<li class="last leaf"><a href="../all-products.html" class="see-all">All products</a></li>
+</ul></div>
+<div class="menu-items"><h3><a href="../industries.1.html">Industries</a></h3><ul class="menu"><li class="first leaf"><a href="../industries/financial.html">Financial services</a></li>
+<li class="leaf"><a href="../industries/government.html">Government</a></li>
+<li class="leaf"><a href="../industries/health-life-sciences.html">Healthcare</a></li>
+<li class="leaf"><a href="../industries/telecommunications.html">Telecommunications</a></li>
+<li class="last leaf"><a href="../industries.1.html" class="see-all">All industries</a></li>
+</ul></div>
+<aside><div class="trending">
+  <a href="../mobile.1.html">
+    <div class="trending-item">
+      <p><strong>Your mobile-first strategy can be a reality</strong></p>
+      <p>Learn how Red Hat Mobile Application Platform can help you accelerate mobile app development and integration.</p>
+    </div>
+  </a>
+  <a href="../../insights/security.html">
+    <div class="trending-item">
+      <p><strong>Security is about more than code</strong></p>
+      <p>Learn about Red Hat’s collaborative approach to security.</p>
+    </div>
+  </a>
+</div></aside>      <div class="go-to"><a href="../../technologies.1.html" class="link-all entire">Explore Technologies</a></div></div></div></div><div class="sub-menu"><div class="sub-container"> <div class="inner-sub-container"><div class="menu-items"><h3><a href="../../services/support.1.html">Support</a></h3><ul class="menu"><li class="first leaf"><a href="https://access.redhat.com/">Customer Portal</a></li>
+<li class="leaf"><a href="../../services/support/technical-account-management.html">Technical Account Management</a></li>
+<li class="last leaf"><a href="https://access.redhat.com/support/contact/customerService/">Customer service</a></li>
+</ul></div>
+<div class="menu-items"><h3><a href="../../services/training.1.html">Training</a></h3><ul class="menu"><li class="first leaf"><a href="../../services/training/all-courses-exams.html">All courses and exams</a></li>
+<li class="leaf"><a href="../../services/training/courses-by-curriculum.html">Courses by curriculum</a></li>
+<li class="leaf"><a href="../../services/training/ways-to-train.html">Ways to train</a></li>
+<li class="leaf"><a href="../../services/training/learning-subscription.html">Learning subscription</a></li>
+<li class="leaf"><a href="../../services/training/student-center.html">Student center</a></li>
+<li class="leaf"><a href="../../services/training/skills-assessment.html">Skills assessment</a></li>
+<li class="last leaf"><a href="../../services/training/contact.html">Contact training</a></li>
+</ul></div>
+<div class="menu-items"><h3><a href="../../services/certification.1.html">Certification</a></h3><ul class="menu"><li class="first leaf"><a href="../../services/all-certifications-exams.html">All certifications and exams</a></li>
+<li class="leaf"><a href="../../services/certification/rhcp.html">For certified professionals</a></li>
+<li class="leaf"><a href="../../services/certification/resources-for-employers.html">For employers</a></li>
+<li class="leaf"><a href="../../../wapps/training/certification/verify.html">Certification Central</a></li>
+<li class="leaf"><a href="../../services/certification/ways-to-test.html">Ways to test</a></li>
+<li class="last leaf"><a href="../../services/training/contact.html">Contact certification</a></li>
+</ul></div>
+<div class="menu-items"><h3><a href="../../services/consulting.1.html">Consulting</a></h3><ul class="menu"><li class="first leaf"><a href="../../services/consulting/innovation-paths.html">Innovation paths</a></li>
+<li class="leaf"><a href="../../services/consulting/cloud.html">Cloud services</a></li>
+<li class="leaf"><a href="../../services/consulting/application-services.html">Application services</a></li>
+<li class="last leaf"><a href="../../services/consulting/infrastructure.html">Infrastructure services</a></li>
+</ul></div>
+<aside><div class="trending">
+  <a href="../../services/training/learning-subscription.html">
+    <div class="trending-item">
+      <p><strong>Red Hat Learning Subscription</strong></p>
+      <p>A flexible training solution that saves you time, energy, and budget.</p>
+    </div>
+  </a>
+  <a href="../../services/support.1.html">
+    <div class="trending-item">
+      <p><strong>Why subscribe to free software?</strong></p>
+      <p>Learn about the value of a Red Hat subscription.</p>
+    </div>
+  </a>
+</div></aside>      <div class="go-to"><a href="../../services.1.html" class="link-all entire">Explore Services &amp; support</a></div></div></div></div><div class="sub-menu"><div class="sub-container"> <div class="inner-sub-container"><div class="menu-items"><h3><a href="../../success-stories.1.html">Customers</a></h3><ul class="menu"><li class="first leaf"><a href="../../success-stories/adobe.html">Adobe</a></li>
+<li class="leaf"><a href="../../success-stories/ampersand.html">Ampersand</a></li>
+<li class="leaf"><a href="../../success-stories/bayer-business-services.html">Bayer Business Services</a></li>
+<li class="leaf"><a href="../../success-stories/beth-israel-medical-center.html">Beth Israel Medical Center</a></li>
+<li class="leaf"><a href="../../success-stories/grupo-bmv.html">Bolsa Mexicana de Valores</a></li>
+<li class="last leaf"><a href="../../success-stories.1.html">See all...</a></li>
+</ul></div>
+<div class="menu-items"><h3><a href="../../success-stories.1.html">Partners</a></h3><ul class="menu"><li class="first leaf"><a href="../../success-stories/red-hat-and-hp.html">HP</a></li>
+<li class="leaf"><a href="../../success-stories/red-hat-and-ibm.html">IBM</a></li>
+<li class="leaf"><a href="../../success-stories/quru.html">Quru</a></li>
+<li class="last leaf"><a href="../../success-stories/shadow-soft.html">Shadow-Soft</a></li>
+</ul></div>
+<aside><div class="trending">
+  <a href="../../success-stories/cigna.html">
+    <div class="trending-item">
+      <p><strong>Cigna builds a private cloud</strong></p>
+      <p>Red Hat helped Cigna speed business apps to customers and boost Cigna's bottom line.</p>
+    </div>
+  </a>
+  <a href="../../resources/peavey-amplifies-business-intelligence.html">
+    <div class="trending-item">
+      <p><strong>Peavey amplifies business intelligence</strong></p>
+      <p>Red Hat helped Peavey Electronics speed the performance of its analytics solution and give remote users mobile reporting access.</p>
+    </div>
+  </a>
+</div></aside>      <div class="go-to"><a href="../../success-stories.1.html" class="link-all entire">Explore Success stories</a></div></div></div></div><div class="sub-menu"><div class="sub-container"> <div class="inner-sub-container"><div class="menu-items"><h3><a href="../../about.1.html">Red Hat</a></h3><ul class="menu"><li class="first leaf"><a href="../../about/company.1.html">Company information</a></li>
+<li class="leaf"><a href="../../about/company/management.html">Executive team</a></li>
+<li class="leaf"><a href="../../about/news.html">Newsroom</a></li>
+<li class="leaf"><a href="../../about/events.html">Events</a></li>
+<li class="leaf"><a href="../../about/global.html">Around the world</a></li>
+<li class="leaf"><a href="../../insights.1.html">Insights</a></li>
+<li class="last leaf"><a href="http://investors.redhat.com/">Investor Relations</a></li>
+</ul></div>
+<div class="menu-items"><h3>&nbsp;</h3><ul class="menu"><li class="first leaf"><a href="../../about/social.html">Social</a></li>
+<li class="leaf"><a href="../../about/all-blogs.html">Blogs</a></li>
+<li class="leaf"><a href="../../about/videos.html">Videos</a></li>
+<li class="leaf"><a href="../../resources.1.html">Resource library</a></li>
+<li class="leaf"><a href="../../about/women-in-open-source.html">Women in Open Source Award</a></li>
+<li class="leaf"><a href="http://jobs.redhat.com/">Jobs @ Red Hat</a></li>
+<li class="last leaf"><a href="../../about/offices.html">Locations</a></li>
+</ul></div>
+<aside><div class="trending">
+  <a href="../../about/press-releases/red-hat-acquire-it-automation-and-devops-leader-ansible.html">
+    <div class="trending-item">
+      <p><strong>Red Hat to Acquire IT Automation and DevOps Leader Ansible</strong></p>
+      <p>Red Hat advances frictionless IT with simplified management for hybrid clouds, OpenStack environments and container-based services</p>
+    </div>
+  </a>
+  <a href="../../partners/strategic-alliance/microsoft.html">
+    <div class="trending-item">
+      <p><strong>Run Red Hat products on Microsoft Azure</strong></p>
+      <p>Now you can move your Red Hat product subscriptions to Azure, with an integrated support experience from both companies.</p>
+    </div>
+  </a>
+</div></aside>      <div class="go-to"><a href="../../about.1.html" class="link-all entire">Learn more About Red Hat</a></div></div></div></div>      </div>
+    </div>
+  </div>
+  <div id="second-menu">
+    <div class="container">
+      <nav id="secondary-nav">
+        <ul class="menu"><li class="first leaf"><a href="../../customers.1.html">Customers</a></li>
+<li class="leaf"><a href="../../partners.1.html">Partners</a></li>
+<li class="last leaf"><a href="../../open-source.html">Open source</a></li>
+</ul>      </nav>
+      <nav id="utility-nav">
+        <div class="item-list"><ul><li id="utility-search" class="switch first" title="Search"><a href="../../search.html" class="expand" onclick="return false;"></a></li>
+<li id="utility-account" class="switch" title="Accounts"><a href="../../../wapps/sso/logout.html" class="expand" onclick="return false;"></a></li>
+<li id="utility-globe" class="switch last" title="Global Preferences"><a href="../../about/global.html" class="expand" onclick="return false;"></a></li>
+</ul></div>      </nav>
+    </div>
+  </div>
+
+  <div id="sliding-utility-panel">
+    <div id="search-panel" class="utility-panel">
+      <div class="utility-content">
+        <form class="search-form" action="http://www.redhat.com/en/search/node" method="post" id="redhat-www-solr-search-box" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label class="element-invisible" for="edit-keys">Enter your keywords </label>
+ <input maxlength="128" size="15" placeholder="Enter your search term" type="text" id="edit-keys" name="keys" value="" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div></div><input type="hidden" name="form_build_id" value="form-8sKLWEvV7KQgchBHUCrtU6kayvaupISl6scEPvZuOkM" />
+<input type="hidden" name="form_id" value="redhat_www_solr_search_box" />
+</div></form>      </div>
+    </div>
+    <div id="account-panel" class="utility-panel">
+        <div class="utility-content">
+                      <section class="account-tray">
+  <header>
+    <div class="container">
+              <p class="rh-login-heading rh-user-loggedin">Welcome, <span class='rh-name'></span></p>
+                    <p class="rh-login-heading rh-user-loggedout">Log in to your Red Hat account</p>
+          </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <section class="account-login rh-user-loggedout">
+        <div class="account-login-wrapper">
+                      <a href="../../../wapps/sso/logout.html" class="account-login-link utility-user-login-link">Log in</a>                                <p>Your Red Hat account gives you access to your member profile and preferences, and the following services based on your customer status:</p>
+                                <div class="utility-user-additional-links"><div class="item-list"><ul><li class="first">Customer Portal</li>
+<li class="last">Red Hat Connect for Business Partners</li>
+</ul></div><div class="item-list"><ul><li class="first">User management</li>
+<li class="last">Certification Central</li>
+</ul></div></div>                  </div>
+        <div class="account-register-wrapper">
+                      <a href="../../../wapps/ugc/register.html" class="account-register-link">Register</a>                                <h2>Not registered yet? Here are a few reasons why you should be:</h2><div class="item-list"><ul><li class="first">Browse Knowledgebase articles, manage support cases and subscriptions, download updates, and more from one place.</li>
+<li>View users in your organization, and edit their account information, preferences, and permissions.</li>
+<li class="last">Manage your Red Hat certifications, view exam history, and download certification-related logos and documents.</li>
+</ul></div>                  </div>
+      </section>
+      <section class="account-logout rh-user-loggedin">
+        <div class="account-welcome-wrapper">
+                      <a href="../../../wapps/ugc/protected/account.html" class="account-edit-link">Edit your profile and preferences</a>                                <p>Your Red Hat account gives you access to your member profile, preferences, and other services depending on your customer status.</p>
+                            </div>
+        <div class="account-logout-wrapper">
+                      <p>For your security, if you&#039;re on a public computer and have finished using your Red Hat services, please be sure to log out.</p>
+                                <a href="../../../wapps/sso/logout.html" class="account-logout-link">Log out</a>                  </div>
+      </section>
+    </div>
+  </div>
+</section>
+                  </div>
+    </div>
+    <div id="globe-panel" class="utility-panel">
+        <div class="utility-content">
+                      <section class="globe-tray">
+  <header>
+    <div class="container">
+              <p class="rh-global-pref-heading" >Red Hat global preferences</p>
+          </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <!-- LEFT SIDE -->
+      <div class="language-picker">
+                  <p class="rh-global-pref-heading2">Select your language</p>
+                          <section><div><div><a href="http://www.redhat.com/zh/technologies/storage/storage-server" class="language-link" xml:lang="zh" hreflang="zh" title="Gluster storage">简体中文</a></div><div><a href="gluster.html" class="language-link active" xml:lang="en" hreflang="en" title="Red Hat Gluster Storage (formerly Red Hat Storage Server)">English</a></div><div><a href="http://www.redhat.com/fr/technologies/storage/storage-server" class="language-link" xml:lang="fr" hreflang="fr" title="Gluster storage">Français</a></div><div><a href="http://www.redhat.com/de/technologies/storage/gluster" class="language-link" xml:lang="de" hreflang="de" title="Gluster storage">Deutsch</a></div></div><div><div><a href="http://www.redhat.com/it/technologies/storage/storage-server" class="language-link" xml:lang="it" hreflang="it" title="Gluster storage">Italiano</a></div><div><a href="http://www.redhat.com/ja/technologies/storage/storage-server" class="language-link" xml:lang="ja" hreflang="ja" title="Gluster storage">日本語</a></div><div><a href="http://www.redhat.com/ko/technologies/storage/storage-server" class="language-link" xml:lang="ko" hreflang="ko" title="Gluster storage">한국어</a></div><div><a href="http://www.redhat.com/pt-br/technologies/storage/storage-server" class="language-link" xml:lang="pt-br" hreflang="pt-br" title="Gluster storage">Português</a></div><div><a href="http://www.redhat.com/es/technologies/storage/storage-server" class="language-link" xml:lang="es" hreflang="es" title="Gluster storage">Español</a></div></div></section>                </div>
+      <!-- RIGHT SIDE -->
+      <div class="explore">
+        <section>
+                      <p class="rh-global-pref-heading2">Explore</p>
+                                <p>Learn what&#039;s happening for Red Hat customers around the world:</p>
+                  </section>
+        <nav>
+                      <ul class="menu"><div class="first expanded"><h3>Asia Pacific</h3><ul class="menu"><li class="first leaf"><a href="../../global/china.html">China</a></li>
+<li class="leaf"><a href="../../global/japan.html">Japan</a></li>
+<li class="leaf"><a href="../../global/singapore.html">Singapore</a></li>
+<li class="leaf"><a href="../../global/south-korea.html">South Korea</a></li>
+<li class="last leaf"><a href="../../global/taiwan.html">Taiwan</a></li>
+</ul></div><div class="expanded"><h3>Europe, Middle East, and Africa</h3><ul class="menu"><li class="first leaf"><a href="../../global/austria.html">Austria</a></li>
+<li class="leaf"><a href="../../global/belgium.html">Belgium</a></li>
+<li class="leaf"><a href="../../global/czech-republic.html">Czech Republic</a></li>
+<li class="leaf"><a href="../../global/denmark.html">Denmark</a></li>
+<li class="leaf"><a href="../../global/finland.html">Finland</a></li>
+<li class="leaf"><a href="../../global/france.html">France</a></li>
+<li class="leaf"><a href="../../global/germany.html">Germany</a></li>
+<li class="leaf"><a href="../../global/ireland.html">Ireland</a></li>
+<li class="leaf"><a href="../../global/israel.html">Israel</a></li>
+<li class="leaf"><a href="../../global/italy.html">Italy</a></li>
+<li class="leaf"><a href="../../global/luxembourg.html">Luxembourg</a></li>
+<li class="leaf"><a href="../../global/netherlands.html">Netherlands</a></li>
+<li class="leaf"><a href="../../global/norway.html">Norway</a></li>
+<li class="leaf"><a href="../../global/poland.html">Poland</a></li>
+<li class="leaf"><a href="../../global/portugal.html">Portugal</a></li>
+<li class="leaf"><a href="../../global/russia.html">Russia</a></li>
+<li class="leaf"><a href="../../global/south-africa.html">South Africa</a></li>
+<li class="leaf"><a href="../../global/spain.html">Spain</a></li>
+<li class="leaf"><a href="../../global/sweden.html">Sweden</a></li>
+<li class="leaf"><a href="../../global/switzerland.html">Switzerland</a></li>
+<li class="leaf"><a href="../../global/turkey.html">Turkey</a></li>
+<li class="leaf"><a href="../../global/united-arab-emirates.html">United Arab Emirates</a></li>
+<li class="last leaf"><a href="../../global/united-kingdom.html">United Kingdom</a></li>
+</ul></div><div class="expanded"><h3>Latin America</h3><ul class="menu"><li class="first leaf"><a href="../../global/argentina.html">Argentina</a></li>
+<li class="leaf"><a href="../../global/brazil.html">Brazil</a></li>
+<li class="leaf"><a href="../../global/chile.html">Chile</a></li>
+<li class="leaf"><a href="../../global/colombia.html">Colombia</a></li>
+<li class="last leaf"><a href="../../global/mexico.html">Mexico</a></li>
+</ul></div><div class="last expanded"><h3>North America</h3><ul class="menu"><li class="first leaf"><a href="../../global/canada-english.html">Canada - English</a></li>
+<li class="leaf"><a href="../../global/canada-french.html">Canada - French</a></li>
+<li class="last leaf"><a href="../../global/united-states.html">United States</a></li>
+</ul></div></ul>                  </nav>
+      </div>
+    </div>
+  </div>
+</section>
+                  </div>
+    </div>
+  </div>
+
+</header>
+
+  <div id="main-content">
+
+            <a id="main-content"></a>
+                                                  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <article class="node-2511 node node-page clearfix">
+
+  
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even"><style>
+    .upperlower {
+        text-transform: none;
+    }
+    body.editorial.prod-detail .compact dt {
+        margin-top:0;
+     }
+    </style>
+    <section class="hero1 simple band">
+        <header>
+            <div class="container">
+                <p>Storage</p>
+                <h1>Red Hat Gluster Storage</h1>
+            </div>
+        </header>
+    </section>
+    <section class="body1 generic1 band">
+        <header>
+            <div class="container">
+                    <p>Open, software-defined storage</p>
+                    <h1>Traditional storage limits innovation</h1>
+                  </div>
+              </header>
+              <div class="container">      
+                <section class="content-body">
+                  <p>Hardware-based storage segregates information, making it hard to find, access, and manage. Adding capacity to your traditional system often disrupts access to data. And if your hardware fails, it can bring your business to a standstill.</p>
+                  <p>Red Hat<sup>&reg;</sup> Gluster Storage (formerly Red Hat Storage Server) is different. It's open, software-defined file storage that scales out as much as you need. You can easily and securely manage <a href="http://www.redhat.com/en/insights/big-data">big</a>, unstructured, and semistructured data at a fraction of the cost of traditional storage. And only Red Hat lets you deploy the same storage on premise or in a public or hybrid cloud.</p>
+                </section>
+            <aside class="content-tabs mini-tabs">
+                <div class="content-tabs-content">
+                    <div class="content-tabs-navbar">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.resources.minitab">
+                                </button>
+                            </div>
+                            <div class="navbar-collapse resources minitab c-tabs collapse">
+                                <div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="gluster.html#Try" data-toggle="tab">Try</a></li>
+                                        <li><a href="gluster.html#Buy" data-toggle="tab">Buy</a></li>
+                                        <li><a href="gluster.html#Download" data-toggle="tab">Download</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/navbar-collapse -->
+                        </div>
+                        <!--/container -->
+                    </div>
+                    <!--/content-tabs-navbar -->
+                    <div class="tab-pane-content">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div class="tab-pane fade-in active" id="Try">
+                                    <p>Test-drive Red Hat Gluster Storage. Amazon Web Services makes it easy&mdash;and free.</p>
+                                    <a href="http://red.ht/storage-testdrive" class="cta-primary">Try It Now</a>
+                                </div>
+                                <div class="tab-pane fade-in" id="Buy">
+                                    <p>Our friendly sales team is ready to help you purchase Red Hat Gluster Storage.</p>
+                                    <a href="../../about/contact/sales.html" class="cta-primary">Contact Sales</a>
+                                </div>
+                                <div class="tab-pane fade-in" id="Download">
+                                    <p>Download Red Hat Gluster Storage.<sup>*</sup>
+                                        <br/> <small><sup>*</sup>Active subscription required</small></p>
+                                    <a href="https://access.redhat.com/products/red-hat-storage/" class="cta-primary">Download Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </container> -->
+                    </div>
+                    <!-- </tab-pane-content> -->
+                </div>
+                <!--content-tabs-content -->
+            </aside>
+        </div>
+    </section>
+    <!--PROMO -->
+      <section class="promo1 band">
+    <div id="promo-slider-130801" class="content carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+      <div class="carousel-inner">
+                  <div class="item node-123151">
+  <div class="container">
+    <div>
+      <section class="promo1-caption" data-text-color="color-black" data-position="left" data-cta-position="left">
+        <h2 class="promo1-title">Calculate your storage savings</h2>
+        <p class="promo1-teaser">Find out how much you can save with open, software-defined storage</p>
+                  <a href="http://www.storagesavingscalculator.com?intcmp=70160000000f4dbAAA" class="cta-primary">Get started</a>              </section>
+    </div>
+  </div>
+</div>
+              </div>
+      <div class="carousel-controls">
+        <div class="container">
+          <a class="left rh-carousel-control" href="gluster.html#promo-slider-130801" data-slide="prev">
+             Prev           </a>
+           <a class="right rh-carousel-control" href="gluster.html#promo-slider-130801" data-slide="next">
+             Next           </a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="fset1 band">
+        <header>
+            <div class="container">
+                <h1>Benefits</h1>
+                <h2>Nimble performance that won't quit</h2>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <section>
+                    <ul class="equal-height">
+                        <li>
+                            <span class="rh-icon-moving" aria-hidden="true"></span>
+                            <h3>Fast, simple deployment</h3>
+                            <div>
+                                <p>Build a secure, thin-provisioned, multitenant storage system in just minutes. With a few mouse clicks, deploy additional storage in seconds.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rh-icon-puzzle-piece" aria-hidden="true"></span>
+                            <h3>Advanced data protection</h3>
+                            <div>
+                                <p>Erasure coding reduces capacity requirements, and bit-rot detection helps preserve the integrity of your data assets.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rh-icon-increase-productivity" aria-hidden="true"></span>
+                            <h3>Better performance</h3>
+                            <div>
+                                <p>No metadata server means no performance bottlenecks, and storage tiering functionality enhances performance for your frequently accessed files.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rh-icon-cloud-admin" aria-hidden="true"></span>
+                            <h3>Anywhere, anytime data access</h3>
+                            <div>
+                                <p>Employees can access and share files from any device while IT has the convenience of a single management point across multiple data storage locations.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+    </section>
+    <section class="content-tabs band">
+        <div class="content-tabs-inner">
+            <header>
+                <div class="container">
+                    <h1>Product details</h1>
+                    <h2>Transform your data from a burden into an asset</h2>
+                </div>
+            </header>
+            <div class="content-tabs-content">
+                <div class="content-tabs-navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button data-target=".navbar-collapse.resources.summary" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            </button>
+                        </div>
+                        <div class="navbar-collapse resources summary c-tabs collapse">
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="gluster.html#Overview">Overview</a></li>
+                                    <li class=""><a data-toggle="tab" href="gluster.html#Secure">Security</a></li>
+                                    <li class=""><a data-toggle="tab" href="gluster.html#Painless">Painless management</a></li>
+                                    <li class=""><a data-toggle="tab" href="gluster.html#LowerCosts">Lower Costs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/navbar-collapse -->
+                    </div>
+                    <!--/container -->
+                </div>
+                <!--/content-tabs-navbar -->
+                <div class="tab-pane-content">
+                    <div class="container">
+                        <div class="tab-content">
+                            <div id="Overview" class="tab-pane fade-in active">
+                                <header>
+                                    <div class="container">
+                                        <h3>Scale out for truly agile storage capacity</h3>
+                                    </div>
+                                </header>
+                                <section>
+                                    <p>10 years ago, you could estimate how much storage you needed and buy disk space accordingly. Today, businesses generate at least 40-60% of additional data each year. Predicting a maximum amount of storage is no longer possible, and buying massive amounts of capacity up front is wasteful.</p>
+                                    <p>Red Hat Gluster Storage scales linearly instead of just up, so you can:</p>
+                                    <ul>
+                                        <li>Add or remove compute, I/O bandwidth, or storage when your capacity and performance needs change.</li>
+                                        <li>Repurpose existing hardware on the fly.</li>
+                                        <li>Respond to business changes quickly without creating a standalone storage environment for each new initiative.</li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div id="Secure" class="tab-pane fade-in">
+                                <header>
+                                    <div class="container">
+                                        <h3>Secure, more available data</h3>
+                                    </div>
+                                </header>
+                                <section class="main-and-side">
+                                    <article>
+                                        <p>With integrated NFSv4 support, Red Hat Gluster Storage enhances security with access control lists for additional control and flexibility. Secure certificate functionality provides authentication, assuring secure data communication across the network. Additionally, local and geo replication and self-healing capabilities ensure high levels of data protection, availability, and resiliency.</p>
+                                        <p><a href="http://www.redhat.com/en/resources/storage-server-snapshot-feature" class="cta-secondary">Protect your data with Red Hat Gluster Storage&rsquo;s snapshot feature</a></p>
+                                    </article>
+                                    <aside class="icon-big">
+                                        <div><span class="rh-icon-security" aria-hidden="true"></span></div>
+                                    </aside>
+                                </section>
+                            </div>
+                            <div id="Painless" class="tab-pane fade-in">
+                                <header>
+                                    <div class="container">
+                                        <h3>Painless storage management</h3>
+                                    </div>
+                                </header>
+                                <section>
+                                    <p>Red Hat Gluster Storage doesn't require a complex storage area network (SAN) infrastructure, saving your IT staff time and maintenance overhead. It also simplifies storage management by:</p>
+                                    <ul>
+                                        <li>Unifying file and object storage, which eliminates storage silos while letting users instantly access files and objects from 1 place across data storage locations.</li>
+                                        <li>Centralizing management and providing an intuitive interface.</li>
+                                        <li>Restoring data to the correct state following recovery.</li>
+                                        <li>Including performance monitoring and analysis tools.</li>
+                                        <li>Automating management tasks.</li>
+                                    </ul>
+                                    <p><a href="http://www.redhat.com/en/resources/storage-server-deployment-monitor" class="cta-secondary">Learn about Red Hat Gluster Storage&rsquo;s monitoring features</a></p>
+                                    <p><a href="http://www.redhat.com/en/technologies/storage/ceph" class="cta-secondary">Looking for block-based storage? Check out Red Hat Ceph Storage.</a></p>
+                                </section>
+                            </div>
+                            <div id="LowerCosts" class="tab-pane fade-in">
+                                <header>
+                                    <div class="container">
+                                        <h3>Lower costs and no vendor lock-in</h3>
+                                    </div>
+                                </header>
+                                <section class="main-and-side">
+                                    <article>
+                                        <p>Unlike rigid proprietary storage solutions, Red Hat Gluster Storage doesn't tie you to someone else's innovation cycles or to a hardware configuration they choose. The software runs on any x86 hardware or public cloud infrastructure, and with erasure coding, you lower the cost per GB as well as the risk of data-recovery failure. And because Red Hat Gluster Storage uses a subscription model with predictable costs, budgeting is easy.</p>
+                                        <a href="https://engage.redhat.com/content/economics-of-software-201309161115" class="cta-secondary">See how software-defined storage can generate up to 52% savings</a>
+                                    </article>
+                                    <aside class="icon-big">
+                                        <div><span class="rh-icon-piggy-bank" aria-hidden="true"></span></div>
+                                    </aside>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </container> -->
+                </div>
+                <!-- </tab-pane-content> -->
+            </div>
+            <!--content-tabs-content -->
+        </div>
+        <!--content-tabs-inner -->
+    </section>
+    <section class="vertical-tabs band reversed">
+        <div class="vertical-tabs-inner">
+            <header>
+                <div class="container">
+                    <p>Services and support</p>
+                    <h1>
+                      We don't just sell you technology. We stand by it.
+                    </h1>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container">
+                    <section>
+                        <div class="vertical-tabs-content">
+                            <div class="vertical-tabs-navbar">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.contact">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse contact c-tabs collapse" style="height: 1px;">
+                                    <div class="row">
+                                        <ul class="nav nav-tabs nav-stacked">
+                                            <li class="active">
+                                                <a href="gluster.html#Training" data-toggle="tab">Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="gluster.html#Certifications" data-toggle="tab">Certifications</a>
+                                            </li>
+                                            <li>
+                                                <a href="gluster.html#Consulting" data-toggle="tab">Consulting</a>
+                                            </li>
+                                            <li>
+                                                <a href="gluster.html#Support" data-toggle="tab">Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="gluster.html#Contact" data-toggle="tab">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/navbar-collapse -->
+                            </div>
+                        </div>
+                        <!--/container -->
+                        <!--/vertical-tabs-navbar -->
+                        <div class="tab-pane-content container">
+                            <div class="tab-content content">
+                                <div class="tab-pane fade-in active" id="Training">
+                                    <header>
+                                        <div class="container">
+                                            <h2>
+                      Invest in your or your team's skills
+                    </h2>
+                                        </div>
+                                    </header>
+                                    <div class="container">
+                                        <div class="content">
+                                            <section>
+                                                <p>Our <a href="../../services/training/all-courses-exams.html">training courses</a> are hands-on and role-based. This means students stay at their keyboards for up to 80% of a course, boosting the retention of skills they'll use every day. We offer several convenient <a href="../../services/training/ways-to-train.html">ways to train</a> and <a href="http://www.redhat.com/en/services/training/specials">save</a>, with <a href="http://www.redhat.com/en/services/training/locations-facilities">training facilities</a> around the world. Visit our <a href="../../services/training/student-center.html">student center</a> to learn more, or read some <a href="http://www.redhat.com/en/services/certification/rhcp/proven">training successes</a>.</p>
+                                                <dl>
+                                                    <dt><a href="http://www.redhat.com/en/services/training/rh236-red-hat-gluster-storage-administration">Red Hat Gluster Storage Administration (RH236)</a></dt>
+                                                    <dd>
+                                                        <p>Learn how to install, configure, and maintain a cluster of Red Hat Storage servers.</p>
+                                                    </dd>
+                                                    <dt><a href="http://www.redhat.com/en/services/training/rh436-red-hat-enterprise-clustering-and-storage-management">Red Hat High Availability Clustering (RH436)</a></dt>
+                                                    <dd>
+                                                        <p>Learn how to deploy and manage shared storage and server clusters that provide highly available network services to an enterprise environment.</p>
+                                                    </dd>
+                                                </dl>
+                                                <a class="cta-primary" href="../../services/training.1.html">Learn more about Red Hat Training</a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade-in" id="Certifications">
+                                    <header>
+                                        <div class="container">
+                                            <h2>
+                      Have what it takes? Prove it.
+                    </h2>
+                                        </div>
+                                    </header>
+                                    <div class="container">
+                                        <div class="content">
+                                            <section>
+                                                <p><a href="../../services/certification/resources-for-employers.html">Employers</a> notice Red Hat <a href="../../services/certification.1.html">certifications</a>. They know that to become <a href="../../services/certification/rhcp.html">Red Hat Certified Professionals</a>, candidates must complete real-world tasks using our technologies&#8211;not just answer questions about them. Build your career by getting certified. We offer multiple <a href="http://www.redhat.com/en/services/training/locations-facilities">exam locations</a> and <a href="../../services/training/ways-to-train.html">ways to train</a>.</p>
+                                                <dl>
+                                                    <dt>Red Hat Certificate of Expertise in Hybrid Cloud Storage</dt>
+                                                    <dd>
+                                                        <p>Deploy scalable, highly available storage on off-the-shelf hardware and in the cloud.</p>
+                                                        <ul class="cta-list">
+                                                            <li><a href="http://www.redhat.com/en/services/certification/rhcoe-hybrid-cloud-storage" class="cta-secondary">Certification</a></li>
+                                                            <li><a href="http://www.redhat.com/en/services/training/ex236-red-hat-certificate-expertise-hybrid-cloud-storage-exam" class="cta-secondary">Exam (EX236)</a></li>
+                                                        </ul>
+                                                    </dd>
+                                                    <dt>Red Hat Certificate of Expertise in Clustering and Storage Management</dt>
+                                                    <dd>
+                                                        <p>Learn how to deploy and manage shared storage and server clusters that provide highly available network services to an enterprise environment.</p>
+                                                        <ul class="cta-list">
+                                                            <li><a href="http://www.redhat.com/en/services/certification/rhcoe-clustering" class="cta-secondary">Certification</a></li>
+                                                            <li><a href="http://www.redhat.com/en/services/training/ex436-red-hat-certificate-expertise-clustering-and-storage-management-exam" class="cta-secondary">Exam (EX436)</a></li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                                <a href="../../services/certification.1.html" class="cta-primary">Learn more about Red Hat certifications</a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade-in" id="Consulting">
+                                    <header>
+                                        <div class="container">
+                                            <h2>
+                      Rely on the experts
+                    </h2>
+                                        </div>
+                                    </header>
+                                    <div class="container">
+                                        <div class="content">
+                                            <section>
+                                                <p>Let Red Hat Consulting help you successfully deploy a cost-effective, scalable storage solution to simplify IT and mitigate risk. We offer flexible engagement models to help meet your <a href="http://www.redhat.com/en/services/consulting/goals">IT goals</a>. Have unallocated end-of-year budget? Consider using <a href="http://www.redhat.com/en/services/consulting/units">Consulting Units</a> to secure resources you'll need in the upcoming year&#8211;without committing to a specific topic up front.</p>
+                                                <dl>
+                                                    <dt><a href="http://www.redhat.com/en/services/consulting/enterprise-solutions">Enterprise Data and Storage</a></dt>
+                                                    <dd>
+                                                        <p>Take control of your organization's data and storage.</p>
+                                                    </dd>
+                                                    <dt><a href="http://www.redhat.com/en/resources/rh-storage-accelerator-service">Red Hat Gluster Storage Accelerator Service</a></dt>
+                                                    <dd>
+                                                        <p>Rapidly deploy a cost-effective, scalable, and reliable storage solution.</p>
+                                                    </dd>
+                                                </dl>
+                                                <a href="../../services/consulting.1.html" class="cta-primary">Learn more about Red Hat Consulting</a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade-in" id="Support">
+                                    <header>
+                                        <div class="container">
+                                            <h2>
+                      Together, we can do more
+                    </h2>
+                                        </div>
+                                    </header>
+                                    <div class="container">
+                                        <div class="content">
+                                            <section>
+                                                <p>Collaboration is a pillar of the open source community. And it's how Red Hat approaches support. Connect to Red Hat Support to access industry-leading technical resources available in our award-winning <a href="https://access.redhat.com/">Red Hat Customer Portal</a> anywhere, any time.</p>
+                                                <ul class="cta-list">
+                                                    <li><a href="../../services/support.1.html" class="cta-secondary">Learn more about Red Hat Support</a></li>
+                                                    <li><a class="cta-secondary" href="http://www.redhat.com/en/about/subscription">Learn more about the value of a Red Hat subscription</a></li>
+                                                    <li><a href="https://access.redhat.com/products/red-hat-storage" class="cta-secondary">Learn more about Red Hat Gluster Storage in Customer Portal</a></li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade-in" id="Contact">
+                                    <header>
+                                        <div class="container">
+                                            <h2>
+                      We're listening
+                    </h2>
+                                        </div>
+                                    </header>
+                                    <div class="container">
+                                        <div class="content">
+                                            <section>
+                                                <p>In keeping with the open source way, we like to keep the lines of communication open. So whether you're a customer or just interested in learning more, connect with us. We're eager to answer questions.</p>
+                                                <dl>
+                                                    <dt><a href="../../about/contact/sales.html">Contact sales</a></dt>
+                                                    <dd>
+                                                        <p>Our sales representatives are knowledgeable, friendly, and always ready to help.</p>
+                                                    </dd>
+                                                    <dt><a href="http://redhat.force.com/finder/">Find a partner</a></dt>
+                                                    <dd>
+                                                        <p>Find a Red Hat partner that sells Red Hat Gluster Storage or related applications.</p>
+                                                    </dd>
+                                                    <dt><a href="https://engage.redhat.com/forms/storage-news">Sign up for our newsletter</a></dt>
+                                                    <dd>
+                                                        <p>Stay up to date on the latest Red Hat Storage news.</p>
+                                                    </dd>
+                                                </dl>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /vertical-tabs -->
+    <section class="socl1 band">
+        <!-- specific component -->
+        <header>
+            <div class="container">
+                <h1>Social</h1>
+                <h2>Join the conversation</h2>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <ul class="equal-height">
+                    <li>
+                        <a href="http://redhatstorage.redhat.com/">
+                            <span class="web-icon-rss"></span> Red Hat Storage blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com/redhatstorage">
+                            <span class="web-icon-twitter"></span> @RedHatStorage
+                        </a>
+                    </li>
+                </ul>
+                <a class="cta-primary" href="../../about/social.html">Connect with us</a>
+            </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+    </section>
+    <section class="tsmn1 band dark tsmn-casio">
+        <!-- specific component -->
+        <div class="content">
+            <div class="container">
+                <section>
+                    <blockquote>
+                        <p>Our costs, including various procurement costs and operating fees, fell to less than half of what they had been before implementing Red Hat [Gluster Storage].</p>
+                        <small><span>Kazuyasu Yamazaki</span>, Group manager of the I.T. Infrastructure Group, Casio Information Service Co.</small>
+                        <a class="cta-primary" href="../../success-stories/casio.html">Learn More</a>
+                    </blockquote>
+                </section>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- content -->
+    </section>
+        <section class="body1 generic1 band">
+        <header>
+            <div class="container">
+                <h1>Use cases</h1>
+            </div>
+        </header>
+        <div class="container">
+            <section class="content-body">
+                <h1>How does Red Hat Gluster Storage apply to your situation?</h1>
+                <p>
+                    Founded on Red Hat Enterprise Linux<sup>&reg;</sup> and GlusterFS, Red Hat Gluster Storage works well for lots of storage needs. It especially shines at managing the growth of unstructured data in your enterprise across workloads like big data analytics, virtualization, rich media, and sync and share.
+                </p>
+            </section>
+            <aside>
+                <h3>Find out more</h3>
+                <dl class="compact">
+                    <dt><a href="http://www.redhat.com/en/technologies/storage/use-cases/big-data-analytics" class="cta-secondary">Big data analytics</a></dt>
+                    <dt><a href="http://www.redhat.com/en/technologies/storage/use-cases/file-sync-share" class="cta-secondary">File sync and share</a></dt>
+                    <dt><a href="http://www.redhat.com/en/technologies/storage/use-cases/rich-media" class="cta-secondary">Rich media</a></dt>
+                    <dt><a href="http://www.redhat.com/en/technologies/storage/use-cases/virtualization" class="cta-secondary">Virtualization</a></dt>
+                </dl>
+            </aside>
+        </div>
+    </section>
+    <section class="content-tabs resources band">
+        <div class="content-tabs-inner">
+            <header>
+                <div class="container">
+                    <h2>Related resources</h2>
+                </div>
+            </header>
+            <div class="content-tabs-content">
+                <div class="content-tabs-navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.resources.related">
+                            </button>
+                        </div>
+                        <div class="navbar-collapse resources related c-tabs collapse">
+                            <div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="gluster.html#Datasheets" data-toggle="tab">Datasheets</a></li>
+                                    <li><a href="gluster.html#Whitepapers" data-toggle="tab">Whitepapers</a></li>
+                                    <li><a href="gluster.html#Videos" data-toggle="tab">Videos</a></li>
+                                    <li><a href="gluster.html#Webinars" data-toggle="tab">Webinars</a></li>
+                                    <li><a href="gluster.html#CaseStudies" data-toggle="tab">Case studies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/navbar-collapse -->
+                    </div>
+                    <!--/container -->
+                </div>
+                <!--/content-tabs-navbar -->
+                <div class="tab-pane-content">
+                    <div class="container">
+                        <div class="tab-content">
+                            <div class="tab-pane fade-in active" id="Datasheets">
+                                <header>
+                                    <div class="container">
+                                        <h2>Datasheets</h2>
+                                    </div>
+                                </header>
+                                <section>
+                                    <ul>
+                                        <li><a href="http://www.redhat.com/en/resources/redhat-storage-server-datasheet">Red Hat Gluster Storage</a></li>
+                                        <li><a href="http://www.redhat.com/en/resources/red-hat-storage-and-red-hat-enterprise-virtualization-technology-brief">Red Hat Gluster Storage and Red Hat Enterprise Virtualization</a></li>
+                                        <li><a href="http://www.redhat.com/en/resources/rhs-for-nearline-storage-datasheet">Red Hat Storage for nearline storage</a></li>
+                                        <li><a href="http://www.redhat.com/en/resources/red-hat-storage-server-digital-media">Red Hat Storage for digital media</a></li>
+                                        <li><a href="http://www.redhat.com/en/resources/branch-office-solution-brochure">Red Hat Virtual Infrastructure Storage for remote and branch offices</a></li>
+                                    </ul>
+                                    <a href="http://www.redhat.com/en/resources?f[0]=field_resource_type%3A911&amp;f[1]=field_resource_product_line%3A841&amp;rset1_format=list" class="cta-primary">See all storage datasheets</a>
+                                </section>
+                            </div>
+                            <div class="tab-pane fade-in" id="Whitepapers">
+                                <div class="content">
+                                    <div class="container">
+                                        <section class="parts-2">
+                                            <div>
+                                                <h3>Product whitepapers</h3>
+                                                <ul>
+                                                    <li><a href="https://engage.redhat.com/content/gluster-whitepaper201310031039">Red Hat Storage architecture</a></li>
+                                                    <li><a href="http://www.redhat.com/en/resources/storage-server-snapshot-feature">Red Hat Gluster Storage: Snapshots technology overview</a></li>
+                                                    <li><a href="http://www.redhat.com/en/resources/storage-server-deployment-monitor">Red Hat Gluster Storage: Monitoring technology overview<a></li>
+                                    <li><a href="https://engage.redhat.com/content/consolidate-storage-tier-s-201311191217">Consolidating the storage tier for performance and scalability: Data management and protection with CommVault Simpana and Red Hat Gluster Storage<a></li>
+                                    <li><a href="https://engage.redhat.com/cloud-builders-guide-intel-s-201405010124">Intel Cloud Builders Guide: Content Cloud Storage with Red Hat Storage<a></li>
+                                    <li><a href="https://engage.redhat.com/storage-hp-proliant-s-201405121612">HP scale-out storage solution with Red Hat Gluster Storage</a></li>
+                                                </ul>
+                                                <a href="http://www.redhat.com/en/resources?f[0]=field_resource_type%3A921&amp;f[1]=field_resource_product_line%3A841&amp;rset1_format=list" class="cta-primary">See all storage whitepapers</a>
+                                            </div>
+                                            <div>
+                                                <h3>Analyst whitepapers</h3>
+                                                <ul>
+                                                    <li><a href="http://www.redhat.com/en/resources/ovum-big-data">Ovum: Staying Agile with Big Data</a></li>
+                                                    <li><a href="https://engage.redhat.com/content/economics-of-software-201309161115">IDC: Economics of Software-Based Storage</a></li>
+                                                    <li><a href="https://engage.redhat.com/content/enterprise-hadoop-trends-s-201310251630">IDC Study: Trends in Enterprise Hadoop Deployments</a></li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade-in" id="Videos">
+                                <header>
+                                    <div class="container">
+                                        <h2>Videos</h2>
+                                    </div>
+                                </header>
+                                <div class="content">
+                                    <div class="container">
+                                        <section>
+                                            <ul>
+                                                <li><a href="http://www.redhat.com/en/about/videos/only-opensoftware-defined-storage-solution">Red Hat software-defined storage</a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/intuit-relies-red-hat">Intuit relies on Red Hat</a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/intelitek-builds-robust-cloud-infrastructure-red-hat-storage">Intelitek builds robust cloud infrastructure with Red Hat Storage</a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/cornell-relies-red-hat">Cornell University relies on Red Hat</a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/focus-red-hat-storage-server-3-snapshot-overview">Focus on: Red Hat Gluster Storage 3: Snapshot overview </a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/focus-red-hat-storage-server-3-monitoring-overview">Focus on: Red Hat Gluster Storage 3: Monitoring overview </a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/focus-red-hat-storage-big-data">Focus on: Red Hat Storage big data</a></li>
+                                                <li><a href="http://www.redhat.com/en/about/videos/focus-extracting-value-machine-data-red-hat-storage-and-splunk">Focus on: Extracting value from machine data with Red Hat Storage and Splunk</a></li>
+                                            </ul>
+                                            <a href="http://www.redhat.com/en/resources?f[0]=field_resource_type%3A941&amp;f[1]=field_resource_product_line%3A841&amp;rset1_format=list" class="cta-primary">See all storage videos</a>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade-in" id="Webinars">
+                                <header>
+                                    <div class="container">
+                                        <h2>Webinars</h2>
+                                    </div>
+                                </header>
+                                <section>
+                                    <ul>
+                                        <li><a href="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=20570">Operational analytics made easy with Splunk and Red Hat</a></li>
+                                        <li><a href="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=20888">Get better business insights from your machine data at 10% of the cost</a></li>
+                                    </ul>
+                                    <a href="http://www.redhat.com/en/about/events/past-events?f[0]=field_event_type%3A521&amp;f[1]=field_event_type%3A8131&amp;f[2]=field_event_product_line%3A841&amp;rset1_format=list" class="cta-primary">See all storage webinars</a>
+                                </section>
+                            </div>
+                            <div class="tab-pane fade-in" id="CaseStudies">
+                                <header>
+                                    <div class="container">
+                                        <h2>Case studies</h2>
+                                    </div>
+                                </header>
+                                <section>
+                                    <dl>
+                                        <dt><a href="http://www.redhat.com/en/resources/casio-builds-high-availability-storage-software-and-commodity-servers">Casio</a></dt>
+                                        <dd>To avoid vendor lock-in and to increase flexibility and scalability, Casio migrated to Red Hat Gluster Storage and Red Hat Enterprise Virtualization to centralize infrastructure management and reduce storage costs by 50%.</dd>
+                                        <dt><a href="http://www.redhat.com/en/resources/leading-renewable-energy-operator-uses-red-hat-storage-server-manage-business-critical-weather-prediction-data">Pattern Energy</a></dt>
+                                        <dd>Red Hat Gluster Storage helps Pattern Energy save money, more precisely predict the presence of natural resources, and better manage its energy-producing assets. The company's development teams can now more effectively plan the location of new wind projects around the world.</dd>
+                                        <dt><a href="http://www.redhat.com/en/resources/intuit-leverages-red-hat-storage-always-available-and-massively-scalable-storage">Intuit</a></dt>
+                                        <dd>Red Hat Gluster Storage lets Intuit react and expand quickly in response to the demands of the fast-moving consumer tax market. It also offers a much lower total cost of ownership than proprietary systems, increasing Intuit's return on investment for the initiative. The cost per terabyte of storage dropped by a factor of 16 to 1.</dd>
+                                        <dt><a href="http://www.redhat.com/en/resources/glashart-media-relies-scalable-cost-effective-red-hat-storage">Glashart Media</a></dt>
+                                        <dd>Glashart Media's migration to Red Hat Gluster Storage increased capacity, improved system speed, and lowered costs 8-fold. Plus, redundancy now provides guaranteed availability.</dd>
+                                    </dl>
+                                    <dt><a href="http://www.redhat.com/en/resources/rte-creates-strong-storage-platform">RT&Eacute;</a></dt>
+                                    <dd>Red Hat helps RT&Eacute; consistently provide 500 hours of video-based information and entertainment&#8211;including 45.9 million streams to desktops, mobiles, and tablets, on any given day&#8211;with a scalable, robust storage infrastructure.</dd>
+                                    </dl>
+                                    <br />
+                                    <a href="http://www.redhat.com/en/resources?f[0]=field_resource_type%3A4901&amp;f[1]=field_resource_product_line%3A841&amp;rset1_format=list" class="cta-primary">See all storage case studies</a>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </container> -->
+                </div>
+                <!-- </tab-pane-content> -->
+            </div>
+            <!--content-tabs-content -->
+        </div>
+        <!--content-tabs-inner -->
+    </section>
+    <!-- Modal -->
+    <div class="modal video fade" id="video1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>The only open, software-defined storage solution</h3>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="360" src="http://www.youtube-nocookie.com/embed/8cBHJlxhJDU" frameborder="0" allowfullscreen></iframe>
+                    <figcaption>The only open, software-defined storage solution</figcaption>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- HARDWARE CERTIFICATION -->
+    <article class="node-shared">
+      <section class="spot1 hwc1 band imaged">
+  <header>
+        <div class="container">
+            <h1>Hardware Certification</h1>
+            <h2>Confidently run Red Hat software on your hardware</h2>
+        </div>
+    </header>
+    <div class="content">
+    <div class="container">
+            <p>
+                Red Hat's Hardware Certification Program ensures compatibility between Red Hat software products and hardware from industry-leading partners. In addition to hardware tests that verify compatibility, the program requires an active support relationship between Red Hat and the hardware partner. This relationship is your assurance that Red Hat and the certified hardware partner will work together to address issues should the need arise.
+            </p>
+            <a href="https://access.redhat.com/certification" class="cta-primary">Learn more</a>
+    </div>
+    </div>
+</section> </article>
+
+    <section class="call1 band imaged">
+        <div class="container">
+            <div class="content">
+                <h1>Get started with a proof of concept</h1>
+                <a href="https://engage.redhat.com/forms/storage-poc" class="cta-primary">Register now</a>
+            </div>
+        </div>
+    </section>
+    <article class="node-shared">
+      <section class="body1 generic1 band fineprint">
+  <div class="container">
+    <p class="fine">The OpenStack<sup>&reg;</sup> Word Mark and OpenStack Logo are either registered trademarks / service marks or trademarks / service marks of the OpenStack Foundation, in the United States and other countries and are used with the OpenStack Foundation's permission. We are not affiliated with, endorsed or sponsored by the OpenStack Foundation or the OpenStack community.</p>
+  </div>
+</section> </article>
+</div>
+      </div>
+</div>
+<div class="field field-name-field-page-js field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even">
+<script>
+  (function ($) {
+    Drupal.behaviors.jsfieldformatter_behavior_5649ae37c2477 = {
+      attach: function (context, settings) {
+        $(document).ready(function() {
+    $('.modal-body').fitVids();
+jQuery(document).bind('hidden.bs.modal', function() {
+  var vid = jQuery('.modal.video iframe[src*="youtube"]');
+  if ( vid.length > 0 ){
+    var src = vid.attr('src');
+    vid.attr('src', '');
+    vid.attr('src', src);
+  }
+});
+});
+      }
+    };
+  })(jQuery);</script></div>
+      </div>
+</div>
+
+  
+  
+</article>
+
+</div>
+  </div>
+          
+    
+  </div>
+
+  <aside class="mini-bar band">
+  <div class="mini-bar-inner">
+    <div class="container">
+      <div>
+        <div class="content">
+
+          <ul class="options">
+            <li class="contact"><span>Contact Us</span></li>
+            <li class="share"><span>Share &amp; Save</span></li>
+          </ul>
+
+          <div class="mini-bar-panels">
+            <div class="contact-panel">
+              <h3>Contact Us</h3>
+              <div class="mini-bar-links">
+                <ul class="contact-options">
+                  <li><a href="tel:+19197543700" class="web-icon-call">+1 (919) 754-3700</a></li>
+                  <li><a href=" https://access.redhat.com/support/contact/customerService/" class="web-icon-envelope">Customer service</a></li>
+                                      <li><a href="http://access.redhat.com" class="web-icon-dashboard">Customer Portal</a></li>
+                                                        <li><a href="../../contact.html" class="web-icon-plus">More ways to connect</a></li>
+                                  </ul>
+                                  <h4>Sales</h4>
+                  <ul class="sales-options">
+                                          <li><a href="../../about/contact/sales.html" class="web-icon-plus">Contact form</a></li>
+                                                              <li><a href="http://redhat.force.com/finder" class="web-icon-laptop">Find a partner</a></li>
+                                                              <li><a href="../../../wapps/store/catalog.html" class="web-icon-cart">Buy online (Global)</a><br /><a href="../../about/japan-buy.html" class="web-icon-cart">Buy online (Japan)</a></li>
+                                      </ul>
+                                                  <h4>Training</h4>
+                  <ul class="training-options">
+                      <li><a href="../../services/training/contact.html" class="web-icon-plus">Contact form</a></li>
+                  </ul>
+                              </div>
+            </div>
+
+            <div class="share-panel">
+              <h3>Share and save this page</h3>
+              <div class="mini-bar-links">
+                                  <ul class="save-options">
+                                          <li><a href="javascript:window.print();" class="print-link web-icon" title="Click to print this page"><i class="web-icon-print"></i> Print</a></li>
+                                                              <li><a href="mailto:?subject=Check out this redhat.com page: Red Hat Gluster Storage (formerly Red Hat Storage Server)&amp;body=I saw this on redhat.com and thought you might be interested.  Click the following link to read: http://www.redhat.com/en/technologies/storage/gluster" class="download-link web-icon" title="Click to send this page as email"><i class="web-icon-envelope"></i> Send as email</a></li>
+                                      </ul>
+                                                  <div class="item-list"><ul class="share-options"><li class="first"><a href="http://www.facebook.com/sharer.php?u=http%3A//www.redhat.com/en/technologies/storage/gluster" class="redhat_www_share-facebook"><span class='web-icon web-icon-facebook'></span>Facebook</a></li>
+<li><a href="https://plus.google.com/share?url=http%3A//www.redhat.com/en/technologies/storage/gluster" class="redhat_www_share-google"><span class='web-icon web-icon-gplus'></span>Google+</a></li>
+<li><a href="https://twitter.com/share?url=http%3A//www.redhat.com/en/technologies/storage/gluster&amp;text=Red%20Hat%20Gluster%20Storage%20%28formerly%20Red%20Hat%20Storage%20Server%29" class="redhat_www_share-twitter"><span class='web-icon web-icon-twitter'></span>Twitter</a></li>
+<li><a href="http://www.linkedin.com/shareArticle?url=http%3A//www.redhat.com/en/technologies/storage/gluster&amp;title=Red%20Hat%20Gluster%20Storage%20%28formerly%20Red%20Hat%20Storage%20Server%29&amp;source=Redhat" class="redhat_www_share-linkedin"><span class='web-icon web-icon-linkedin'></span>LinkedIn</a></li>
+<li class="last"><a href="http://www.reddit.com/submit?url=http%3A//www.redhat.com/en/technologies/storage/gluster&amp;title=Red%20Hat%20Gluster%20Storage%20%28formerly%20Red%20Hat%20Storage%20Server%29" class="redhat_www_share-reddit"><span class='web-icon web-icon-reddit'></span>Reddit</a></li>
+</ul></div>                              </div>
+            </div>
+
+          </div>
+        </div><!-- content -->
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- mini-bar-inner -->
+</aside><!-- mini-bar -->
+  <footer>
+  <section class="extended">
+    <div class="content">
+      <div class="container">
+        <nav class="row footer-items"><div class="first expanded col-md-2 col-sm-2 foot-col foot-logo"><h3>Redhat</h3></div><div class="first expanded active-trail col-md-2 col-sm-2 foot-col foot-featured"><h3>Featured</h3><ul class="menu"><li class="first leaf"><a href="../linux-platforms/enterprise-linux.html">Red Hat Enterprise Linux</a></li>
+<li class="leaf active-trail"><a href="gluster.html" class="active-trail active">Red Hat Gluster Storage</a></li>
+<li class="leaf"><a href="../linux-platforms/satellite.html">Red Hat Satellite</a></li>
+<li class="leaf"><a href="../cloud-computing/openshift.html">OpenShift Enterprise by Red Hat</a></li>
+<li class="leaf"><a href="../linux-platforms/openstack-platform.html">Red Hat Enterprise Linux OpenStack Platform</a></li>
+<li class="last leaf"><a href="../mobile/application-platform.html">Red Hat Mobile Application Platform</a></li>
+</ul></div>
+<div class="expanded col-md-2 col-sm-2 foot-col foot-tools"><h3>Tools</h3><ul class="menu"><li class="first leaf"><a href="../../../wapps/sso/logout.html">My account</a></li>
+<li class="leaf"><a href="https://access.redhat.com">Customer Portal</a></li>
+<li class="leaf"><a href="https://access.redhat.com/certification">Hardware catalog</a></li>
+<li class="leaf"><a href="http://partner.redhat.com/connect/business">Red Hat Connect for Business Partners</a></li>
+<li class="last leaf"><a href="../../resources.1.html">Resource library</a></li>
+</ul></div>
+<div class="expanded col-md-2 col-sm-2 foot-col foot-purchase"><h3>Purchase</h3><ul class="menu"><li class="first leaf"><a href="../../../wapps/store/catalog.html">Buy online (global)</a></li>
+<li class="leaf"><a href="../../about/japan-buy.html">Buy online (Japan)</a></li>
+<li class="leaf"><a href="../../about/contact/sales.html">Contact sales</a></li>
+<li class="leaf"><a href="../../services/training/contact.html">Contact training</a></li>
+<li class="last leaf"><a href="http://redhat.force.com/finder/">Find a partner</a></li>
+</ul></div>
+<div class="expanded col-md-2 col-sm-2 foot-col foot-communicate"><h3>Communicate</h3><ul class="menu"><li class="first leaf"><a href="../../contact.html">Contact us</a></li>
+<li class="leaf"><a href="../../about/mediarelations/contact.html">Media inquiries</a></li>
+<li class="leaf"><a href="../../about/analysts.html">Industry analyst inquiries</a></li>
+<li class="leaf"><a href="../../about/feedback.html">Feedback</a></li>
+<li class="last leaf"><a href="../../about/social.html">Social</a></li>
+</ul></div>
+<div class="last expanded col-md-2 col-sm-2 foot-col foot-about"><h3>About</h3><ul class="menu"><li class="first leaf"><a href="../../about/news.html">Newsroom</a></li>
+<li class="leaf"><a href="../../about/events.html">Events</a></li>
+<li class="leaf"><a href="../../about/all-blogs.html">Blogs</a></li>
+<li class="leaf"><a href="../../about/videos.html">Videos</a></li>
+<li class="leaf"><a href="../../about/global.html">Around the world</a></li>
+<li class="leaf"><a href="../../insights.1.html">Insights</a></li>
+<li class="leaf"><a href="http://investors.redhat.com/">Investor Relations</a></li>
+<li class="leaf"><a href="http://jobs.redhat.com/">Jobs @ Red Hat</a></li>
+<li class="last leaf"><a href="http://www.redhat.corpmerchandise.com/">Cool Stuff Store</a></li>
+</ul></div>
+</nav>      </div>
+    </div>
+  </section>
+  <section class="traditional">
+    <div class="content">
+      <div class="container">
+        <section>
+          <div class="traditional-primary">
+            <div class="row">
+              <div class="event-logo">
+                <div id="block-block-5" class="block block-block block-footer-promote">
+
+      
+  <a href="../../../summit/index.html"><img src="../../../profiles/rh/themes/redhatdotcom/img/logo-summit.png" style="margin-right:10px"></a>
+<a href="http://www.devnation.org/"><img src="../../../cms/public/styles/thumbnail/s3private/devnation.png" alt="DevNation" style="max-width:70px;"></a>
+</div>
+              </div>
+              <div class="social-links">
+                <nav id="foot-social"><ul><li class="first leaf"><a href="https://plus.google.com/+RedHat" class="icon-google-plus"></a></li>
+<li class="leaf"><a href="http://www.linkedin.com/company/red-hat" class="icon-linkedin-sign"></a></li>
+<li class="leaf"><a href="http://www.youtube.com/user/RedHatVideos" class="icon-youtube"></a></li>
+<li class="leaf"><a href="https://www.facebook.com/redhatinc" class="icon-facebook"></a></li>
+<li class="last leaf"><a href="https://twitter.com/RedHatNews" class="icon-twitter"></a></li>
+</ul></nav>              </div>
+            </div>
+          </div>
+          <div id="legal" class="legal">
+            <div class="row">
+              <ul class="menu"><li class="first leaf"><a href="../../about/privacy-policy.html">Privacy statement</a></li>
+<li class="leaf"><a href="../../about/terms-use.html">Terms of use</a></li>
+<li class="last leaf"><a href="../../about/all-policies-guidelines.html">All policies and guidelines</a></li>
+</ul>              <div class="copyright">Copyright ©2015 Red Hat, Inc.</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</footer>
+  <div class="region region-bottom">
+    <img src="http://20656543p.rfihub.com/ca.gif?rb=15393&amp;ca=20656543&amp;ra=%n" height="0" width="0" style="display:none" alt="Rocket Fuel" />
+    <noscript>
+      <img style="border-style:none;display:block" src="https://smtrcs.redhat.com/b/ss/redhatglobal/1/H.25--NS/0?[AQB]&cdp=3&[AQE]" height="1" width="1" border="0" alt="" />
+    </noscript>
+  <img height="1" width="1" style="border-style:none;display:block;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/990030321/?value=0&amp;label=rxV4CN_35QQQ8dOK2AM&amp;guid=ON&amp;script=0" />
+  </div>
+
+      <script type="text/javascript" src="../../../sites/default/files/advagg_js/js__6pKtxAsuiEwzLqzoBMwLb9k53D1ylTZ0_Wo0K-Slycc__tofWCRo9EstSHqoc3_PkzULPYnY3J0XlHcENfxp_9Ww__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.js"></script>
+<script type="text/javascript" src="../../../j/elqNow/elqImg.js"></script>
+<script type="text/javascript" src="../../../j/elqNow/elqCfg.js"></script>
+<script type="text/javascript" src="../../../sites/default/files/advagg_js/js__RrDt8-XUFCDpH6utFClEnKmJdDo5v7feYgtPn1glamg__LFFgIlBbiTXBcW7-mFx8_R1hnDxAHoEqntpIP26y3dU__bFTx_acgE9g8bo9ZUxtllUr_zdIqRaZ7xQG2I1Wm9QM.js"></script>
+    </div>
+  </body>
+</html>

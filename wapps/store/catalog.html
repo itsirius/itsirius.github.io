@@ -1,0 +1,1180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<title>redhat.com</title>
+<script type="text/javascript" src="https://www.redhat.com/j/lib/jquery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/assets/js/jquery-ui-1.8.4.custom.min.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/assets/js/jquery.selectbox-0.5.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/assets/js/init.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/j/prototype.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/j/scriptaculous.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/j/store/js/textUtil.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/j/storeTabs.js"></script>
+<script type="text/javascript" src="https://www.redhat.com/wapps/store/gwt/com.redhat.www.store.gwt.StoreClient/com.redhat.www.store.gwt.StoreClient.nocache.js" ></script>
+<script type="text/javascript" src="https://www.redhat.com/wapps/store/js/store.js"></script>
+
+<script type="text/javascript">
+    function addPageError(errorText) {
+        var errorDiv = document.createElement("DIV");
+        errorDiv.className = "site_conf_error";
+        errorDiv.innerHTML = errorText;
+
+        var errorLI = document.createElement("LI");
+        errorLI.appendChild(errorDiv);
+
+        $("errors_list").appendChild(errorLI);
+    }
+</script>
+
+<style>
+        #main{
+          float: left;
+          width:485px;
+        }
+
+        .store-CartWidget {
+            width: 175px;
+        }
+
+        #store-SaveCartSubmitLabel{
+          padding-top:5px;
+        }
+
+        .store-LineItemRemove {
+            background-image: none;
+        }
+
+        .store-CartHeaderPanel {
+           float:left;
+        }
+
+        .store-CartHeaderItems {
+           font-size: 10px;
+        }
+
+        .store-CartShadeUpLabel,
+        .store-CartShadeDownLabel {
+           float: right;
+           padding-top: 1px;
+        }
+
+        .store-CartShadeDivider {
+           clear: right;
+        }
+
+
+    </style>
+<link rel="SHORTCUT ICON" href="https://www.redhat.com/favicon.ico" />
+<link rel="stylesheet" href="https://www.redhat.com/s/partners.css" type="text/css" media="screen" />
+ <link rel="stylesheet" type="text/css" href="https://www.redhat.com/assets/global.css" />
+ <link rel="stylesheet" type="text/css" href="https://www.redhat.com/assets/pagelayout.css" />
+ <link rel="stylesheet" type="text/css" media="print" href="https://www.redhat.com/s/print.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Start Kampyle Css -->
+<!-- End Kampyle Css -->
+<link rel="stylesheet" type="text/css" href="http://www.redhat.com/s/fonts/webfonts.css" />
+</head>
+
+
+
+
+  
+	<body id="maineight" class="en_US">
+  
+  
+
+<div id="container">
+    <!-- Start shell-top -->
+    <div id="shell-top">
+        <!-- Start wrap-top -->
+        <div class="wrap">
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+
+	
+	
+	
+	
+
+	
+		
+		
+			<div id="logo">
+				<a href="http://www.redhat.com">Redhat</a>
+			</div>
+			<div id="login-pre">
+				<a onmousedown="activateLogin()">LOG IN</a>
+			</div>
+			<div id="login-active" style="margin-top: -170px;">
+				<h2>LOG IN<span><a
+						onmousedown="deactivateLogin()" class="close-login">X</a></span>
+				</h2>
+				<form method="post" action="../sso/logout.html">
+					<div>
+						<input type="text" class="search-field" name="username"
+							value="User name "> <input type="password"
+							class="search-field" name="password" value="msg.loginwidget.password">
+					</div>
+					<p>
+						<a class="arrow" href="../ugc/register.html">Register</a><br> <a class="arrow"
+							href="https://www.redhat.com/wapps/sso/lostPassword.html">Forgot password?</a> <input
+							type="hidden" value="legacy-login-flow" name="_flowId"> <input
+							type="hidden" value="/wapps/store/catalog.html"
+							name="redirect"> <input type="hidden"
+							value="http://www.redhat.com/wapps/sso/login.html"
+							name="failureRedirect"> <input type="hidden"
+							value="Log In" name="_eventId_submit" id="_eventId_submit">
+						
+
+						<input type="submit" onclick="submitLogin()"
+							value="SUBMIT" name="login-submit">
+					</p>
+					<div>
+						<input type="hidden" value="iso-8859-1" name="asp_charset">
+					</div>
+				</form>
+			</div>
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+   
+      
+        <div id="masthead-simple"> 
+ <div class="second-nav-rh" id="secondary-nav"> 
+  <ul style="margin-bottom: 5px;"> 
+   <li class="first"> 
+    <!--a href="#" id="showCountryLang_a"></a>
+        Country Language Dropdown --> 
+    <div id="51464fd1-6c75-464e-be07-d34d77f514c4"> 
+     <div class="PORTLET-FRAGMENT" style="width: null;height: null;"> 
+      <a href="catalog.html#" id="showCountryLang_a"><strong>United States</strong>
+       <!-- English --> </a> 
+      <div class="dropdown nav-countlang" id="countryLanguage_OverLay"> 
+       <div class="countryLanguage_Child1"> 
+       </div> 
+       <a class="close" id="hideCountryLang_a">X </a> 
+       <div class="col first"> 
+        <table class="countryLangGrid"> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Argentina </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=AR|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Australia </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=AU|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Austria </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=AT|de">Deutsch </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Bangladesh </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=BD|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Belgium </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=BE|fr">Fran&ccedil;ais </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=BE|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Brazil </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=BR|pt">Portugu&ecirc;s do Brasil </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Canada </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CA|fr">Fran&ccedil;ais </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CA|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Chile </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CL|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>China </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CN|zh">简体中文 </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CN|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Colombia </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CO|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Czech Republic </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CZ|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Denmark </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=DK|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Ecuador </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=EC|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Finland </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=FI|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>France </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=FR|fr">Fran&ccedil;ais </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Germany </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=DE|de">Deutsch </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Hong Kong </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=HK|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>India </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=IN|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Indonesia </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=ID|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Ireland </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=IE|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+        </table> 
+       </div> 
+       <div class="col first"> 
+        <table class="countryLangGrid"> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Israel </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=IL|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Italy </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=IT|it">Italiano </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Japan </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=JP|ja">日本語 </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=JP|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Korea </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=KR|ko">한국어(한글) </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=KR|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Lithuania </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=LT|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Luxembourg </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=LU|fr">Fran&ccedil;ais </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=LU|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Malaysia </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=MY|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Mexico </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=MX|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Netherlands </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=NL|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>New Zealand </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=NZ|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Norway </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=NO|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Pakistan </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=PK|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Paraguay </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=PY|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Peru </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=PE|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Philippines </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=PH|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Portugal </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=PT|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Russia </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=RU|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Singapore </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=SG|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>South Africa </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=ZA|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Spain </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=ES|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+        </table> 
+       </div> 
+       <div class="col first"> 
+        <table class="countryLangGrid"> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Sri Lanka </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=LK|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Sweden </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=SE|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Switzerland </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CH|it">Italiano </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CH|fr">Fran&ccedil;ais </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CH|en">English </a> </span> 
+            <span>| </span> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=CH|de">Deutsch </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Taiwan </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=TW|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Thailand </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=TH|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>UAE </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=AE|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>United Kingdom </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=GB|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>United States </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=US|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Uruguay </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=UY|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source"> 
+          <td class="countryWrapper" width="30%"> <span>Venezuela </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=VE|es">Espa&ntilde;ol </a> </span> 
+           </div> </td> 
+         </tr> 
+         <tr class="source oddRowClass"> 
+          <td class="countryWrapper" width="30%"> <span>Vietnam </span> </td> 
+          <td class=" subnav target" width="70%"> 
+           <div class="languageWrapper"> 
+            <span> <a href="https://www.redhat.com/setCountryLanguage?localeValue=VN|en">English </a> </span> 
+           </div> </td> 
+         </tr> 
+        </table> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- / Country Language Dropdown --> </li> 
+   <li><a href="http://www.redhat.com/">redhat.com</a></li> 
+   <li><a href="https://access.redhat.com">Customer Portal</a></li> 
+  </ul> 
+ </div> 
+</div>
+      
+      
+   
+   
+
+
+
+
+
+</div>
+<!-- /header -->
+
+
+                <!--These div tags are part of the header.thml masthead and header-->
+            <!-- Start content column -->
+            <div id="content">
+                <div id="contentWrap"><link rel="stylesheet" href="https://www.redhat.com/s/storeFront.css"/>
+
+<div id="underlay" style="display:none"></div>
+
+<div id="storeFront">
+    <div id="storeContent">
+
+        <div id="headWrap" class="clearWrap">
+            <h1 id="storeHeading"><span>Red Hat Store</span></h1>
+        </div>
+    </div>
+</div><!-- end storeFront -->
+
+<div id="contentStoreColLeft">
+
+    <div class="contentIndent" style="display:none">
+        <div class="site_conf_error_header" id="site_conf_error_header">Errors processing your submission:</div>
+        <div>
+            <ul id="errors_list">
+                
+            </ul>
+        </div>
+    </div>
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Customer portal styles -->
+<link media="all" rel="stylesheet" type="text/css" href="https://access.devgssci.devlab.phx1.redhat.com/chrome_themes/nimbus/css/master-blessed1.css?v=8">
+
+<style>
+.alert-info { background-image: none; border-color: none; border-color: none; }
+.alert { text-shadow: none; box-shadow: none; margin-bottom: 0; border: none; border-radius: none; font-size: 98%; }
+.alert-dismissible .close { top: -10px; right: -25px; }
+.modal-header .close { margin-top: -8px; }
+@media (min-width: 768px) { .modal-dialog { margin-top: 7%; } }
+.modal-content { border-radius: 0; }
+.modal-footer { border-top: 0; padding: 0 15px 15px; }
+.modal-header { border-bottom: none; }
+.modal-open .modal { background-color: rgba(0,0,0,0.7); }
+
+html>body .widgetStoreBody { width: auto; }
+.sideCartItemBlock, .sideCartItemBlockEmpty, .sideCartItemTotal { width: auto; }
+.store2Col h3 { font-size: 16px; margin-bottom: 0; }
+.store2ColRight { margin-left: 300px; }
+.cta-link:after { margin-left: 0.3rem; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid #0088ce; }
+.modal-backdrop.fade.in { display: none; }
+
+@media only screen { a, a:link, a:visited { color: #cc0000; text-decoration: underline; } }
+</style>
+
+<div class="col-md-12" style="margin-bottom: 30px;">
+<div class="alert alert-info alert-dismissible" role="alert">
+  For those customers that are located in Latin America or in the following APAC countries (China, Indonesia, Philippines, Thailand, and Vietnam), we ask that you contact your local sales agent to purchase Red Hat products. <a class="cta cta-link" data-toggle="modal" data-target="#contact">Details</a>
+</div>
+
+<div class="modal fade" id="contact" role="dialog" aria-labelledby="Regional contact details">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>For those customers that are located in Latin America or in the following APAC countries (China, Indonesia, Philippines, Thailand, and Vietnam), we ask that you contact your local sales agent to purchase Red Hat products.</p>
+  <p><strong>Asia Pacific</strong><br>Regional contact details can be found <a href="../../en/contact.html#apac">here</a>.</p>
+  <p><strong>Latin America</strong><br>Regional contact details can be found <a href="../../en/contact.html#latam">here</a>.</p>
+  <p><strong>China</strong><br>就您所在区 域的购买事宜，敬请直接联系红帽销售:<br><span class="web-icon-call glyphicon glyphicon-earphone"></span> <a href="tel:+86 10 6533 9448">86 10 6533 9448</a><br><span class="web-icon-envelope glyphicon glyphicon-envelope"></span> <a href="mailto:webstore-china@redhat.com">webstore-china@redhat.com</a></p>
+<p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+
+
+    <div class="contentIndent">
+
+    <h2>Featured Products <a class="storeh2SideLink" href="https://www.redhat.com/wapps/store/allProducts.html">View All Products</a></h2>
+
+    <div class="productRow clearWrap">
+    <style>
+        .sockets {
+            margin-left:12px;
+            font-size:.9em;
+            color:#666;
+            clear:both;
+        }
+
+        .instances {
+            font-size:.9em;
+            margin-left:15px;
+            margin-bottom:8px;
+            font-weight:bold;
+            clear:both;
+        }			
+	.productRow h3 a {
+    	text-decoration: none;
+        font-size: 1.2rem;
+	}
+	.productRow h3 span {
+    	font-size: 12px;
+	}
+	.productRow h4 {
+    	font-size: 1rem;
+	}
+    </style>
+    <h3><a href="https://www.redhat.com/apps/store/server/rhel.html">Red Hat Enterprise Linux Server</a><span>for 32/64-bit x86</span></h3>
+
+    <div class="storeSupportOptions">
+        <a class="outgoing" target="_blank" href="https://access.redhat.com/support/offerings/production/sla.html">Support Levels</a> | <a href="https://www.redhat.com/apps/store/server/rhel.html#storeTabWrap">Product Information</a>
+    </div><!-- /storeSupportOptions -->
+
+    <div class="storeServerOptions"></div>
+
+    <!-- FLEX -->
+    <h4>Red Hat Enterprise Linux Server</h4>
+        <div class="storeCurrLabel">Prices in US dollars</div>
+        <div class="instances">2 sockets, 1 physical or 2 virtual nodes</div>
+        <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+        <div class="storePrice">$799</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton">
+            <a id="addToCart-RH00004" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00004&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+        </div>
+
+        <div class="storeSupportLevel"><span class="storeSupport">Premium Subscription</span> (1 year)</div>
+        <div class="storePrice">$1,299</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton">
+            <a id="addToCart-RH00003" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00003&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+        </div>
+
+        <div class="instances">2 sockets, 1 physical or 2 virtual nodes, with Smart Management</div>
+        <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+
+        <div class="storePrice">$991</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton">
+            <a id="addToCart-RH00009" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00009&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+        </div>
+
+        <div class="storeSupportLevel"><span class="storeSupport">Premium Subscription</span> (1 year)</div>
+        <div class="storePrice">$1,491</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton">
+            <a id="addToCart-RH00008" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00008&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+        </div>
+
+        <div class="sockets">*For additional sockets, update quantity in cart. <a href="https://www.redhat.com/apps/store/server/rhel.html#storeTabWrap">Read more.</a></div>
+
+
+    <h4>Red Hat Enterprise Linux Server Entry Level</h4>
+        <div class="storeCurrLabel">Prices in US dollars</div>
+
+        <div class="instances">2 sockets</div>
+        <div class="storeSupportLevel"><span class="storeSupport">Self-support Subscription</span> (1 year)</div>
+        <div class="storePrice">$349</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton">
+            <a id="addToCart-RH00005" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00005&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+        </div>
+
+        <div class="instances">2 sockets, with Smart Management</div>
+        <div class="storeSupportLevel"><span class="storeSupport">Self-support Subscription</span> (1 year)</div>
+        <div class="storePrice">$541</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton">
+            <a id="addToCart-RH00010" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00010&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+        </div>
+
+        <div class="sockets">*This subscription is only available for a single socket-pair; it cannot be stacked or combined.</div>
+</div><!-- end productRow -->
+
+
+
+<div class="productRow clearWrap">
+    <h3><a href="https://www.redhat.com/apps/store/server/rhel.html">Red Hat Enterprise Linux for Virtual Datacenters</h3>
+
+    <div class="storeSupportOptions">
+        <a class="outgoing" target="_blank" href="https://access.redhat.com/support/offerings/production/sla.html">Support Levels</a> | <a href="https://www.redhat.com/apps/store/server/rhel.html#storeTabWrap">Product Information</a>
+    </div><!-- /storeSupportOptions -->
+
+    <div class="storeServerOptions"></div>
+
+
+    <!-- PRIVATE CLOUDS -->
+    <div class="instances">2 sockets, unlimited virtual, no physical</div>
+    <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+
+    <div class="storePrice">$2,499</div>
+    <div class="storeCurrency">USD</div>
+    <div class="storeButton">
+        <a id="addToCart-RH00002" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00002&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+    </div>
+
+    <div class="storeSupportLevel"><span class="storeSupport">Premium Subscription</span> (1 year)</div>
+    <div class="storePrice">$3,999</div>
+    <div class="storeCurrency">USD</div>
+    <div class="storeButton">
+        <a id="addToCart-RH00001" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00001&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+    </div>
+
+    <div class="instances">2 sockets, unlimited virtual, no physical, with Smart Management</div>
+    <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+
+    <div class="storePrice">$3,219</div>
+    <div class="storeCurrency">USD</div>
+    <div class="storeButton">
+        <a id="addToCart-RH00007" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00007&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+    </div>
+
+    <div class="storeSupportLevel"><span class="storeSupport">Premium Subscription</span> (1 year)</div>
+    <div class="storePrice">$4,719</div>
+    <div class="storeCurrency">USD</div>
+    <div class="storeButton">
+        <a id="addToCart-RH00006" href="https://www.redhat.com/wapps/store/allProducts.html#" onclick="addItem(&#39;RH00006&#39;, 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a>
+    </div>
+
+    <div class="sockets">*For additional sockets, update quantity in cart. <a href="https://www.redhat.com/apps/store/server/rhel.html#storeTabWrap">Read more.</a></div>
+</div><!-- end productRow -->
+
+
+<div class="productRow clearWrap">
+    <h3><a href="https://www.redhat.com/apps/store/server/rhel.html#ibm_power">Red Hat Enterprise Linux Server for IBM POWER</a><span></span></h3>
+
+    <div class="storeSupportOptions">
+        <a class="outgoing" target="_blank" href="https://access.redhat.com/support/offerings/production/sla.html">Support Levels</a> | <a href="https://www.redhat.com/apps/store/server/rhel.html#storeTabWrap">Product Information</a>
+    </div><!-- /storeSupportOptions -->
+
+    <h5>2 sockets (15 LPARs)</h5>
+
+        <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+        <div class="storePrice">$2,700</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton"><a id="addToCart-RH0383454" href="catalog.html#" onclick="addItem('RH0383454', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+
+        <div class="storeSupportLevel"><span class="storeSupport">Premium Subscription</span> (1 year)</div>
+        <div class="storePrice">$4,300</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton"><a id="addToCart-RH0322810" href="catalog.html#" onclick="addItem('RH0322810', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+
+    <h5>4 sockets (30 LPARs) </h5>
+        <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+        <div class="storePrice">$5,400</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton"><a id="addToCart-RH0350482" href="catalog.html#" onclick="addItem('RH0350482', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+
+        <div class="storeSupportLevel"><span class="storeSupport">Premium Subscription</span> (1 year)</div>
+
+        <div class="storePrice">$8,600</div>
+        <div class="storeCurrency">USD</div>
+        <div class="storeButton"><a id="addToCart-RH0330979" href="catalog.html#" onclick="addItem('RH0330979', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+
+</div><!-- end productRow -->
+    			
+				
+		
+	<div class="productRow clearWrap">
+			<h3><a href="https://www.redhat.com/apps/store/desktop/">Red Hat Enterprise Linux for Desktops or Workstations</a></h3>	
+			<div class="storeSupportOptions">
+			<a class="outgoing" target="_blank" href="https://access.redhat.com/support/offerings/production/sla.html">Support Levels</a> | <a href="https://www.redhat.com/apps/store/desktop/index.html#storeTabWrap">Product Information</a>
+			</div><!-- /storeSupportOptions -->		
+			
+			<div class="productVariants">Desktop</div>
+			<div class="storeSupportLevel"><span class="storeSupport">Self-support Subscription</span> (1 year)</div>
+
+			<div class="storePrice">$49</div>
+                        <div class="storeCurrency">USD</div>
+			<div class="storeButton"><a id="addToCart-RH0844913" href="catalog.html#" onclick="addItem('RH0844913', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+
+			<div class="productVariants">Workstation</div>
+			<div class="storeSupportLevel"><span class="storeSupport">Self-support Subscription</span> (1 year)</div>
+			<div class="storePrice">$179</div>
+                        <div class="storeCurrency">USD</div>
+			<div class="storeButton"><a id="addToCart-RH0986300" href="catalog.html#" onclick="addItem('RH0986300', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+
+			
+			<div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+			<div class="storePrice">$299</div>
+                        <div class="storeCurrency">USD</div>
+			<div class="storeButton"><a id="addToCart-RH0958488" href="catalog.html#" onclick="addItem('RH0958488', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+	</div><!-- /productRow -->
+
+<div class="productRow clearWrap">
+	<h3><a href="https://www.redhat.com/apps/store/middleware/jboss_enterprise_application_platform.html">Red Hat JBoss Enterprise Application Platform</a></h3>
+
+                  <div class="storeSupportOptions">
+                  <a class="outgoing" target="_blank" href="https://access.redhat.com/support/offerings/production/sla.html">Support Levels</a> | <a 
+                          href="https://www.redhat.com/apps/store/middleware/jboss_enterprise_application_platform.html#storeTabWrap">Product Information</a>
+                  </div><!-- /storeSupportOptions -->
+
+                  <div class="instances">16 core</div>
+                  <div class="storeSupportLevel"><span class="storeSupport">Standard Subscription</span> (1 year)</div>
+                  <div class="storePrice">$8,000</div>
+                  <div class="storeCurrency">USD</div>
+                  <div class="storeButton"><a id="addToCart-MW0196814" href="catalog.html#" onclick="addItem('MW0196814', 1); return false;"><img alt="add to cart" src="https://www.redhat.com/g/chrome/addtocart.gif" /></a></div>
+                  <div class="sockets">*For additional cores, management, extra support contacts, multi-year or Premium subscriptions <a href="https://www.redhat.com/apps/webform.html?event_type=contact_sales&eid=21">Contact sales</a></div>
+</div><!-- /productRow -->
+
+
+
+    
+         
+    
+    
+    <style>
+  .store-bottom { padding:0; }
+  .store-bottom h3.card-heading { font-size: 20px; text-transform: uppercase; width: 100%; margin-bottom: 20px; }
+
+  .store-bottom .card dl { clear: both; }
+  .store-bottom .card dl dt { margin-top: 15px; }
+  .store-bottom .card dl dd { margin-left:0; }
+</style>
+
+<div class="col-md-12 store-bottom">
+    <div class="card card-grey">
+        <h3 class="card-heading">All products by category</h3>
+        <dl>
+            <dt>Server Operating System</dt>
+            <dd><a href="https://www.redhat.com/apps/store/server/rhel.html">Red Hat Enterprise Linux for x86</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/server/mainframes.html">Red Hat Enterprise Linux for IBM System z</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/add-ons/">Add-Ons for server</a></dd>
+            
+            <dt>Developers</dt>
+            <dd><a href="https://www.redhat.com/apps/store/developers/jboss_developer_studio.html">JBoss Developer Studio</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/developers/rhel_developer_suite.html">Red Hat Enterprise Linux Developer Suite - Self-support Subscription</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/developers/rhel_developer_support_professional.html">Red Hat Enterprise Linux Developer Support, Professional</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/developers/rhel_developer_support_enterprise.html">Red Hat Enterprise Linux Developer Support, Enterprise</a></dd>
+            
+            <dt>Cloud Computing</dt>
+            <dd><a href="https://www.redhat.com/apps/store/cloud/">Red Hat Cloud Computing</a></dd>
+            
+            <dt>Desktop Operating System</dt>
+            <dd><a href="https://www.redhat.com/apps/store/desktop/">Red Hat Enterprise Linux for desktops or workstations</a></dd>
+            
+            <dt>Red Hat JBoss Middleware</dt>
+            <dd><a href="https://www.redhat.com/apps/store/middleware/jboss_enterprise_application_platform.html">Red Hat JBoss Enterprise Application Platform</a></dd>
+            
+            <dt>Red Hat Training and Certification</dt>
+            <dd><a href="https://redhat.com/en/services/training">Red Hat Training</a></dd>
+            <dd><a href="https://redhat.com/en/services/certification">Red Hat Certification</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/training/">Online eLearning Courses</a></dd>
+            <dd><a href="https://www.redhat.com/apps/store/training/10tu.html">Red Hat Training Units Voucher (10)</a></dd>
+        </dl>
+    </div>
+</div>
+
+    </div><!-- end contentIndent -->
+
+</div>
+
+
+<div id="storeCol">
+    <div class="widgetStore">
+        <div class="store-CartWidget" id="cart">
+            <h3 class="noPromo store-CartHeader">
+                <span class="store-CartHeaderPanel">
+                    <div class="store-CartHeaderLabel" id="store-CartHeaderLabel">Your Cart</div>
+                    <span class="store-CartHeaderItems" id="store-CartHeaderItems"></span>
+                </span>
+                <img class="store-CartShadeDownLabel" src="https://www.redhat.com/g/chrome/side_cart_toggle_close.png"/>
+                <br class="store-CartShadeDivider"/>
+            </h3>
+            <div relative;" class="widgetStoreBody">
+                <div class="store-LineItemsWidget">
+                    <div style="display: inline;">
+                        <img src="https://www.redhat.com/g/chrome/throbber_dickie.gif" alt="loading cart..." border="0"/> Loading cart...
+                    </div>
+                    <noscript>Javascript is required</noscript>
+                </div>
+            </div>
+        </div>
+	    <h3 id="store-RightNav-YourAcc">Your Account</h3>
+	    <div class="widgetStoreBody">
+	        <ul class="linkage">
+	            <li><a id="store-CartYourCarts" href="https://www.redhat.com/wapps/store/protected/savedCarts.html">View saved carts</a></li>
+	            <li><a id="store-RightNav-OrderHistory" href="https://www.redhat.com/wapps/orderhistory">Order history</a></li>
+	            <li><a id="store-RightNav-RenewSubs" href="https://www.redhat.com/wapps/support">Renew your subscription</a></li>
+	        </ul>
+	    </div>
+    </div>
+
+            <div class="widgetStore">
+
+            <h3 class="noPromo">Purchasing Information</h3>
+            <div class="widgetStoreBody">
+                <p>Purchasing assistance
+                <strong>1-866-2REDHAT x45014</strong>
+                (1-866-273-3428) </p>
+                <p><a href="https://www.redhat.com/apps/webform.html?event_type=contact_sales&eid=21">Contact Sales</a></p>
+
+                <p><a href="https://www.redhat.com/about/contact/ww/">Global sales offices</a></p>
+                <p><a href="https://www.redhat.com/apps/store/return.html">Return Policy</a></p>
+            </div>
+
+            <h3>Product Categories</h3>
+
+            <div class="widgetStoreBody">
+            <ul class="linkage">
+                <li><a href="https://www.redhat.com/apps/store/server/">Server Operating Systems</a></li>
+                <li><a href="https://www.redhat.com/apps/store/add-ons/">Add-Ons for Servers</a></li>
+                <li><a href="https://www.redhat.com/apps/store/cloud/">Cloud Computing</a></li>
+                <li><a href="https://www.redhat.com/apps/store/desktop/">Desktop Operating Systems</a></li>
+                <li><a href="https://www.redhat.com/apps/store/training/">Red Hat Training</a></li>
+            </ul>
+
+            <p><a href="https://www.redhat.com/wapps/store/allProducts.html">View All Products</a></p>
+
+            </div>
+
+            <h3>Solution Categories</h3>
+
+            <div class="widgetStoreBody">
+            <ul class="linkage">
+                <li><a href="https://www.redhat.com/apps/store/smb/">Small Business</a></li>
+                <li><a href="https://www.redhat.com/apps/store/cloud/">Cloud Computing</a></li>
+                <li><a href="https://www.redhat.com/apps/store/developers/">Developers</a></li>
+            </ul>
+            </div>
+
+            <h3>Resources</h3>
+
+            <div class="widgetStoreBody">
+                <p><a href="https://www.redhat.com/apps/store/other_methods.html">Order Methods</a><br />
+
+                <a href="https://www.redhat.com/apps/store/security.html">About Security</a><br />
+                <a href="https://www.redhat.com/apps/store/shipping.html">Shipping Info</a><br />
+                <a href="https://www.redhat.com/apps/store/tax_info.html">Tax Information</a><br /></p>
+
+                <!-- Bug 859171 Change right hand nav link in store for "Cool Stuff Store" link -->
+                <p><a href="http://www.redhat.corpmerchandise.com">Red Hat Cool Stuff</a></p>
+            </div><!-- end widgetStoreBody -->
+
+    </div><!-- end widgetStore -->
+
+
+</div><!-- end storeCol --></div>
+            <!-- End content column --> 
+            </div>
+        <!-- End wrap-top -->
+        </div>
+    <!-- End shell-top -->
+    </div>
+    <!-- Start shell-bottom -->
+    <div id="shell-bottom">
+        <div class="wrap">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+var s_account="redhatcom,redhatglobal";
+</script>
+<div id="oTags"> 
+<script language="JavaScript" src="https://www.redhat.com/j/s_code.js"></script>
+<script type="text/javascript"><!--
+s.pageName="rh | wapps | store | catalog";
+s.server="redhat.com wapps";
+s.channel="wapps";
+s.prop2=s.eVar22 ="";
+s.prop14= s.eVar27 = "store";
+s.events="";
+--></script>
+<script language="JavaScript" src="https://www.redhat.com/j/rh_omni_footer.js"></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+--></script><noscript><img
+src="https://smtrcs.redhat.com/b/ss/redhatcom,redhatglobal/1/H.2--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+</div>
+
+
+
+
+
+
+
+
+  
+	<div id="footer">
+	<!-- Call Out Boxes -->
+		<div class="call-out-boxes">
+			<div class="call-out-box">
+			    <div class="about">
+				<a href="https://www.redhat.com/about/">About Red Hat</a>
+			    </div>
+			</div>
+			<div class="call-out-box">
+			     <div class="partner">
+				<a href="https://www.redhat.com/partners/">Engage With Partners</a>
+			    </div>
+			</div>
+			<div class="call-out-box">
+			    <div class="community">
+				<a href="https://www.redhat.com/community/">Explore Communities</a>
+			    </div>
+			</div>
+			<div class="call-out-box last">
+			    <div class="myredhat">
+				<a href="https://access.redhat.com/home/">Access My Account</a>
+			    </div>
+			</div>
+			<br class="clear">                
+			</div> <!-- / Call Out Boxes -->
+			<div id="footer-nav">
+					    
+			<ul class="social-icons">
+			    <li><span>Connect:</span></li>
+			    <li><a href="http://www.twitter.com/redhatnews"><img alt="Twitter" src="https://www.redhat.com/assets/images/social/twitter.png"></a></li>
+			    <li><a href="http://www.facebook.com/redhatinc"><img alt="Facebook" src="https://www.redhat.com/assets/images/social/facebook.png"></a></li>
+			    <li><a href="http://www.youtube.com/user/RedHatVideos"><img alt="YouTube" src="https://www.redhat.com/assets/images/social/youtube.png"></a></li>
+			    <li><a href="http://www.linkedin.com/groups?home=&amp;gid=2525539&amp;trk=anet_ug_hm"><img alt="LinkedIn" src="https://www.redhat.com/assets/images/social/linkedin.png"></a></li>
+				<li><a href="http://www.flickr.com/photos/49549965@N04/" target="_blank"><img alt="Flickr" src="https://www.redhat.com/assets/images/social/flickr.png"/></a></li>
+			</ul>
+			
+			<ul class="footer-nav-list">
+			    <li>Copyright &copy;2015 Red Hat, Inc.</li>
+			    <li>|</li>
+
+			    <li><a href="https://www.redhat.com/footer/privacy-policy.html">Privacy Policy</a></li>
+			    <li><a href="https://www.redhat.com/footer/terms-of-use.html">Terms of use</a></li>
+			    <li><a href="https://www.redhat.com/footer/patent-promise.html">Patent promise</a></li>
+			    <li><a href="https://www.redhat.com/about/work/">Careers</a></li>
+			    <li><a href="https://www.redhat.com/about/mediarelations/trademark.html">Trademark guidelines</a></li>
+			    <li><a href="https://www.redhat.com/about/">About Red Hat</a></li>
+			</ul>
+            <ul class="footer-nav-list">
+			    <li><a href="https://www.redhat.com/contact/">Contact us</a></li>
+			    <li><a href="https://www.redhat.com/footer/site-map.html">Site map</a></li>
+			    <li><a href="https://www.redhat.com/footer/faq.html">FAQs</a></li>
+			    <li><a href="https://www.redhat.com/footer/supplier-requirements.html">Supplier requirements</a></li>
+			    <li><a href="https://www.redhat.com/about/">Company</a></li>
+			</ul>                
+		</div>  <!-- Legal Nav -->
+  
+  
+
+
+<!-- Skipping eloqua tracking code -->
+</div><!-- / Footer -->
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
